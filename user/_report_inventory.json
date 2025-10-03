@@ -1,0 +1,4511 @@
+{
+  "reports": [
+    {
+      "id": "essential_baseline_6.5.4_Class316",
+      "label": "Idea Dashboard",
+      "history_label": "Idea Dashboard -",
+      "xsl": "enterprise/core_el_bus_need_dashboard.xsl",
+      "is_enabled": false,
+      "description": "Provides a view of an idea and associated options to deliver them",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/idea-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_6.5.4_Class319",
+      "label": "Strategic Trends Radar",
+      "history_label": "Strategic Trends Radar",
+      "xsl": "enterprise/core_el_strategic_trends_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Provides a view of long term strategic trends",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/strategic-trends.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_6.5.4_Class320",
+      "label": "Supplier Impact Map",
+      "history_label": "Supplier Impact Map",
+      "xsl": "enterprise/core_el_supplier_impact_map.xsl",
+      "is_enabled": true,
+      "description": "Supplier usage within the business and impacts of stratgeic plans",
+      "classifications": [
+        "Technology Architecture Views",
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/supplier_impact.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_6.5.4_Class322",
+      "label": "Supplier License Management",
+      "history_label": "Supplier License Management",
+      "xsl": "enterprise/core_el_supplier_license_mgmt.xsl",
+      "is_enabled": true,
+      "description": "Supplier licenses overview with options analysis",
+      "classifications": [
+        "Technology Architecture Views",
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/supplier_license_mgmt.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_6.5.4_Class325",
+      "label": "Technology Security Vulnerability Analysis",
+      "history_label": "Technology Security Vulnerability Analysis",
+      "xsl": "enterprise/core_el_security_posture.xsl",
+      "is_enabled": true,
+      "description": "Vulnerability analysis of the technology architecture based on the NIST NVD database",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/are_we_secure.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_6.5.4_Class332",
+      "label": "Application Interface Catalogue",
+      "history_label": "Application Interface Catalogue as Table",
+      "xsl": "application/core_al_app_interface_list_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Application Interfaces in use across the enterprise, presented as a table.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-interface-catalogue.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class100",
+      "label": "Data Object Provider Model",
+      "history_label": "Data Object Provider Model -",
+      "xsl": "information/core_il_data_object_provider_model.xsl",
+      "is_enabled": true,
+      "description": "Graphically represents the exchange of a given Data Object between applications",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class736"
+      ],
+      "screenshot": "images/screenshots/data-provider-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class736"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class101",
+      "label": "Data Subject to Application Service Model",
+      "history_label": "Data Subject to Application Service Model -",
+      "xsl": "information/core_il_data_subject_to_appsvc_map.xsl",
+      "is_enabled": true,
+      "description": "Maps the Data Objects of a given Data Subject to the Application Services that create, read, update or delete them.",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class176"
+      ],
+      "screenshot": "images/screenshots/data-subject-to-application-service-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class176"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class102",
+      "label": "Application Capability Summary",
+      "history_label": "Application Capability Summary -",
+      "xsl": "application/core_al_app_cap_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key details and relationships that exist for an Application Capability",
+      "classifications": [
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class150"
+      ],
+      "screenshot": "images/screenshots/application-capability-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class150"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class103",
+      "label": "Application Service Summary",
+      "history_label": "Application Service -",
+      "xsl": "application/core_al_app_service_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for an Application Service",
+      "classifications": [
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class159"
+      ],
+      "screenshot": "images/screenshots/application-service-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class159"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class104",
+      "label": "Technology Node Summary",
+      "history_label": "Technology Node Summary -",
+      "xsl": "technology/core_tl_tech_technology_node_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for a physical Technology Node",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class201"
+      ],
+      "screenshot": "images/screenshots/technology-node-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class201"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class105",
+      "label": "Technology Instance Summary",
+      "history_label": "Technology Instance Summary -",
+      "xsl": "technology/core_tl_tech_instance_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides an end to end summary of the key relationships that exist for a physical Technology Instance",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class106",
+      "label": "Technology Component Summary",
+      "history_label": "Technology Component Summary -",
+      "xsl": "technology/core_tl_tech_comp_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for a logical Technology Component",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class207"
+      ],
+      "screenshot": "images/screenshots/technology-component-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class207"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class107",
+      "label": "Strategic Plan Summary",
+      "history_label": "Strategic Plan Summary -",
+      "xsl": "enterprise/core_el_strategic_plan_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides an end to end summary of the key relationships that exist for a Strategic Plan",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class108",
+      "label": "Project Summary",
+      "history_label": "Project Summary -",
+      "xsl": "enterprise/core_el_project_summary_new.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given Project",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class202"
+      ],
+      "screenshot": "images/screenshots/project-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class202"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class109",
+      "label": "Programme Summary",
+      "history_label": "Programme Summary -",
+      "xsl": "enterprise/core_el_programme_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given Programme",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class203"
+      ],
+      "screenshot": "images/screenshots/programme-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class203"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class110",
+      "label": "Project People Network",
+      "history_label": "Project People Network -",
+      "xsl": "enterprise/core_el_project_people_network.xsl",
+      "is_enabled": true,
+      "description": "Graphically displays the network of people (Individual Actors) and Projects, with a given project at its centre",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class202"
+      ],
+      "screenshot": "images/screenshots/project-network.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class202"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class111",
+      "label": "Programme Plan",
+      "history_label": "Programme Plan -",
+      "xsl": "enterprise/core_el_programme_plan.xsl",
+      "is_enabled": true,
+      "description": "Provides a high view of the timing of Projects that comprise a given Programme.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class203"
+      ],
+      "screenshot": "images/screenshots/programme-plan.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class203"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class112",
+      "label": "Application Information Dependency Model",
+      "history_label": "Application Information Dependency Model -",
+      "xsl": "application/core_al_app_provider_info_deps_model.xsl",
+      "is_enabled": true,
+      "description": "Graphically represents the inbound and outbound exchanges of Information for a given Application",
+      "classifications": [
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/application-info-dependencies-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class113",
+      "label": "Strategic Roadmap",
+      "history_label": "Strategic Roadmap",
+      "xsl": "enterprise/core_el_strategic_roadmap.xsl",
+      "is_enabled": true,
+      "description": "Provides a generic graphical view of a Strategic Roadmap which outlines a list of individual increments of change over a timeline to show progression from a Baseline Architecture State to a Target Architecture State",
+      "classifications": [
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class173"
+      ],
+      "screenshot": "images/screenshots/application-roadmap.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class173"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class114",
+      "label": "Application Service Stakeholder Model",
+      "history_label": "Application Service Stakeholder Model",
+      "xsl": "application/core_al_app_service_stakeholder_model.xsl",
+      "is_enabled": true,
+      "description": "Defines the interaction between logical Application Services and Business Roles.",
+      "classifications": [
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class159"
+      ],
+      "screenshot": "images/screenshots/application-service-stakeholder-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class159"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class115",
+      "label": "Application Technology Platform Model",
+      "history_label": "Application Technology Platform Model -",
+      "xsl": "technology/core_tl_app_tech_alignment.xsl",
+      "is_enabled": false,
+      "description": "DEPRECATED: Graphically describes the logical Technology Components that are needed to support a given Application.",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views",
+        "Deprecated Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011",
+        "store_82_Class42"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/technology-platform-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10016",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class116",
+      "label": "Application Technology Strategy Alignment",
+      "history_label": "Application Technology Strategy Alignment -",
+      "xsl": "technology/core_tl_app_tech_alignment.xsl",
+      "is_enabled": true,
+      "description": "Performs an analysis of a given Application to evaluate its Technology Architecture against agreed product standards.",
+      "classifications": [
+        "Architecture Standards Management",
+        "Project Delivery",
+        "Technology Architecture Views",
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80017",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/app_strategy_technology.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class117",
+      "label": "Business Service Interaction Model",
+      "history_label": "Business Service Interaction Model",
+      "xsl": "business/core_bl_bus_svc_interaction_model.xsl",
+      "is_enabled": true,
+      "description": "Graphically represents the inbound and outbound dependencies of a given Business Service (Product Type) on other Business Services.",
+      "classifications": [
+        "Business Executive View Filter",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10010",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class161"
+      ],
+      "screenshot": "images/screenshots/business-service-interaction-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class161"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class118",
+      "label": "Business Domain IT Analysis",
+      "history_label": "Business Domain IT Analysis -",
+      "xsl": "business/core_bl_bus_cap_app_svc_analysis.xsl",
+      "is_enabled": true,
+      "description": "Provides an analysis of the Applications Services, Applications and Technology Products that support the Business Capabilities of a given Business Domain.",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class153"
+      ],
+      "screenshot": "images/screenshots/application-services-supporting-business-capability-analysis.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class153"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class120",
+      "label": "Data Subject Security Model",
+      "history_label": "Data Subject Security Model -",
+      "xsl": "information/core_il_data_security_model_for_datasubj.xsl",
+      "is_enabled": true,
+      "description": "For a given Data Subject, defines the access control policies defined for the associated Data Objects as well as any business roles that have been assigned specific data management responsibilities.",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class176"
+      ],
+      "screenshot": "images/screenshots/data-security-model-forcategory.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class176"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class124",
+      "label": "Business Domain Process Analysis",
+      "history_label": "Business Domain Process Analysis -",
+      "xsl": "business/core_bl_bus_cap_analysis_by_bus_domain.xsl",
+      "is_enabled": true,
+      "description": "Provides an analysis of the Business Processes  that are performed to deliver the Business Capabilities of a given  Business Domain.",
+      "classifications": [
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class153"
+      ],
+      "screenshot": "images/screenshots/business-process-analysis-for-business-domain.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class153"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class149",
+      "label": "Application Diversity Analysis",
+      "history_label": "Application Diversity Analysis -",
+      "xsl": "application/core_al_app_diversity_analysis.xsl",
+      "is_enabled": true,
+      "description": "Describes the Application Services that are defined for a given capability and the applications that are being used to implement each service togther with the technology products that are used to deliver the application.",
+      "classifications": [
+        "Architecture Standards Management",
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80017",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class150"
+      ],
+      "screenshot": "images/screenshots/application-diversity-and-duplication-analysis.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class150"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class150",
+      "label": "Application Capability Catalogue",
+      "history_label": "Application Capability Catalogue by Name",
+      "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl",
+      "is_enabled": true,
+      "description": "Lists the Application Capabilities contained in the repository by name in alphabetical order.",
+      "classifications": [
+        "Architecture Governance",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-capability-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class151",
+      "label": "Application Impact Analysis",
+      "history_label": "Application Impact Analysis -",
+      "xsl": "application/core_al_app_impact_analysis.xsl",
+      "is_enabled": true,
+      "description": "Lists the applications, business processes and business teams that would be impacted by changes to, or removal of a given application",
+      "classifications": [
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/application-impact-analysis.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class152",
+      "label": "Application Catalogue",
+      "history_label": "Application Catalogue by Name",
+      "xsl": "application/core_al_app_provider_list_by_name.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Applications in use across the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class153",
+      "label": "Business Domain Catalogue",
+      "history_label": "Business Domain Catalogue by Name",
+      "xsl": "business/core_bl_bus_domain_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Business DOmains in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Architecture Governance",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-domain-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class154",
+      "label": "Information Catalogue by Business Domain",
+      "history_label": "Information Catalogue by Domain",
+      "xsl": "information/core_il_inf_list_by_domain.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Information Concepts and Views in scope for the enterprise, organised by Business Domain.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Architecture Standards Management",
+        "Project Delivery",
+        "Architecture Governance",
+        "Information Architecture Views",
+        "Catalogue Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80017",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class155",
+      "label": "Data Catalogue",
+      "history_label": "Data Catalogue by Name",
+      "xsl": "information/core_il_data_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of logical Data Objects in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Architecture Standards Management",
+        "Project Delivery",
+        "Architecture Governance",
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Data Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80017",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/data-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class156",
+      "label": "Data Catalogue by Category",
+      "history_label": "Data Catalogue by Data Category",
+      "xsl": "information/core_il_data_list_by_category.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of conceptual Data Subjects in scope for the enterprise, organised by category (e.g. master, reference, transactional).",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Architecture Standards Management",
+        "Project Delivery",
+        "Architecture Governance",
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Data Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80017",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10012"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class157",
+      "label": "Roadmap Model Catalogue by Layer",
+      "history_label": "Roadmap Model Catalogue by Layer",
+      "xsl": "enterprise/core_el_roadmap_catalogue_by_layer.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the strategic roadmaps that have been defined, organised by architecture layer.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class158",
+      "label": "Application Reference Model",
+      "history_label": "Application Reference Model",
+      "xsl": "enterprise/core_al_app_ref_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Defines a standard, layered view of the Application Capabilities in scope for the enterprise.",
+      "classifications": [
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-reference-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class159",
+      "label": "Application Service Catalogue",
+      "history_label": "Application Service Catalogue by Name",
+      "xsl": "application/core_al_app_service_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the logical applications services in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Architecture Standards Management View Filter",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-service-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class160",
+      "label": "Business Function/Service Model",
+      "history_label": "Business Function/Service Model",
+      "xsl": "business/core_bl_bus_function_service_model.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the logical Business Services (Product Types) that are delivered by the enterprise, the applications that support their delivery, and the logical Busines Roles that participate.",
+      "classifications": [
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Business Architecture Views",
+        "Business Architect View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-function-service-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class161",
+      "label": "Business Service Catalogue",
+      "history_label": "Business Service Catalogue by Name",
+      "xsl": "business/core_bl_bus_service_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Business Services (Product Types) in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Project Delivery",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class163",
+      "label": "Information Reference Model",
+      "history_label": "Information Reference Model",
+      "xsl": "information/core_il_inf_ref_stnds_model.xsl",
+      "is_enabled": true,
+      "description": "Defines a standard, layered view of the Information Concepts in scope for the enterprise.",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/information-reference-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class164",
+      "label": "Data Security Model",
+      "history_label": "Data Security Model",
+      "xsl": "information/core_il_data_security_model.xsl",
+      "is_enabled": true,
+      "description": "Defines the access control policies defined for the conceptual Data Subjects in scope for the enterprise as well as any business roles that have been assigned specific data management responsibilities.",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/data-security-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class165",
+      "label": "Data to Application Service Model",
+      "history_label": "Data to Application Service Model",
+      "xsl": "information/core_il_data_to_appsvc_model.xsl",
+      "is_enabled": true,
+      "description": "Defines the interaction (e.g. create, read, update, delete) between application services and all data subjects in scope for the enterprise.",
+      "classifications": [
+        "Information Architecture Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/data-to-application-service-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class166",
+      "label": "EA Principles",
+      "history_label": "EA Principles",
+      "xsl": "enterprise/core_el_ea_principles_cat.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the architecture principles that have been defined, organised by architecture layer.",
+      "classifications": [
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Enterprise Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/ea-principles.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class167",
+      "label": "Technology Reference and Standards Model",
+      "history_label": "Technology Reference and Standards Model",
+      "xsl": "technology/core_tl_tech_ref_stnds_model_v5.xsl",
+      "is_enabled": false,
+      "description": "Defines a standard, layered view of the logical Technology Components in scope for the enterprise.",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "IT Executive View Filter",
+        "Architecture Standards Management View Filter",
+        "Strategy Management View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-reference-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class173",
+      "label": "Roadmap Model Catalogue",
+      "history_label": "Roadmap Model Catalogue by Name",
+      "xsl": "enterprise/core_el_roadmap_catalogue_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the strategic roadmaps that have been defined, organised by name in alphabetical order.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class176",
+      "label": "Data Subject Catalogue",
+      "history_label": "Data Subject Catalogue by Name",
+      "xsl": "information/core_il_data_subject_list_by_name.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of concpetual Data Subjects, organised alphabetically by name.",
+      "classifications": [
+        "Architecture Standards Management",
+        "Project Delivery",
+        "Architecture Governance",
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Data Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80017",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10012"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class189",
+      "label": "Business Process Catalogue",
+      "history_label": "Business Process Catalogue by Name",
+      "xsl": "business/core_bl_bus_cap_list_as_table_filtered.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Business Processes in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-process-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class191",
+      "label": "Application Catalogue by Application Family",
+      "history_label": "Application Catalogue by Application Family",
+      "xsl": "application/core_al_app_provider_list_by_appfam.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the applications in use across the enterprise, organised by Application Family.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class192",
+      "label": "Information Catalogue",
+      "history_label": "Information Catalogue by Concept",
+      "xsl": "information/core_il_inf_list_by_concept.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Information Concepts, the Views and Representations in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Information Architecture Views",
+        "Catalogue Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/information-catalogue-by-concept.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class193",
+      "label": "Technology Node Catalogue by Vendor",
+      "history_label": "Technology Nodes by Vendor",
+      "xsl": "technology/core_tl_tech_node_list_by_vendor.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the physical Technology Nodes in scope for the enterprise, organised by product vendor.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class194",
+      "label": "Technoogyg Node Products by Vendor",
+      "history_label": "Technoogyg Node Products by Vendor -",
+      "xsl": "technology/core_tl_tech_node_product_list_by_vendor.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the products used to implement physical Technology Nodes, organised by  vendor.",
+      "classifications": [
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class197",
+      "label": "Technology Product Catalogue by Vendor",
+      "history_label": "Technology Product Catalogue by Vendor",
+      "xsl": "technology/core_tl_tech_product_list_by_vendor.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Technology Products in use across the enterprise, organised by product vendor.",
+      "classifications": [
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class198",
+      "label": "Business Process Catalogue by Business Service",
+      "history_label": "Business Process Catalogue by Business Service",
+      "xsl": "business/core_bl_bus_process_list_by_service.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Business Processes in scope for the enterprise, organised by the Business Services that they deliver.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class199",
+      "label": "Business Process Catalogue by Business Domain",
+      "history_label": "Business Process Catalogue by Business Domain",
+      "xsl": "business/core_bl_bus_process_list_by_domain.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Business Processes in scope for the enterprise, organised by business domain.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class200",
+      "label": "Business Capability Catalogue",
+      "history_label": "Business Capability Catalogue by Name",
+      "xsl": "business/core_bl_bus_cap_list_by_name_filtered.xsl",
+      "is_enabled": false,
+      "description": "Graphical diagrams for each applicastion showing dependencies and high level interfaces",
+      "classifications": [
+        "Architecture Governance",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-capability-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class201",
+      "label": "Technology Node Catalogue",
+      "history_label": "Technology Nodes by Name",
+      "xsl": "technology/core_tl_tech_node_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the physical Technology Nodes in scope for the enterprise, organised by name in alphabetical order.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-node-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class202",
+      "label": "Project Catalogue",
+      "history_label": "Project Catalogue",
+      "xsl": "enterprise/core_el_project_catalogue.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of Projects in scope for the enterprise, presented as a table.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/project-catalogue.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class203",
+      "label": "Programme Catalogue",
+      "history_label": "Programme Catalogue by Name",
+      "xsl": "enterprise/core_el_programme_catalogue_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of Programmes in scope for the enterprise, organised alphabetically by name.",
+      "classifications": [
+        "Architecture Strategy Management",
+        "Project Delivery",
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Enterprise Architecture Views",
+        "Business Architect View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Information Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80016",
+        "essential_baseline_v2.0_Class80015",
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80008",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class204",
+      "label": "Technology Product Catalogue",
+      "history_label": "Technology Product Catalogue by Component",
+      "xsl": "technology/core_tl_tech_product_list_by_component.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Technology Products in use across the enterprise, organised by logical Technology Component.",
+      "classifications": [
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class205",
+      "label": "Technology Product Catalogue by Capability",
+      "history_label": "Technology Product Catalogue by Capability",
+      "xsl": "technology/core_tl_tech_product_list_by_capability.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Technology Products in use across the enterprise, organised by conceptual Technology Capability.",
+      "classifications": [
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class206",
+      "label": "Technology Node Catalogue by Product",
+      "history_label": "Technology Nodes by Product",
+      "xsl": "technology/core_tl_tech_node_list_by_product.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the physical Technology Nodes in scope for the enterprise, organised by product.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class207",
+      "label": "Technology Component Catalogue",
+      "history_label": "Technology Component Catalogue by Name",
+      "xsl": "technology/core_tl_tech_comp_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Technology Components in scope for the enterprise, organised by name in alphabetical order.",
+      "classifications": [
+        "Technology Architecture Views",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-component-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class85",
+      "label": "Stakeholder Summary",
+      "history_label": "Stakeholder Summary -",
+      "xsl": "enterprise/core_el_stakeholder_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given Stakeholder",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [
+        "essential_baseline_v5_Class74"
+      ],
+      "screenshot": "images/screenshots/stakeholder-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v5_Class74"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class86",
+      "label": "Business Process Model",
+      "history_label": "Business Process Model -",
+      "xsl": "business/core_bl_bus_process_model.xsl",
+      "is_enabled": true,
+      "description": "Graphically describes the process steps involved in the execution of a given Business Process.",
+      "classifications": [
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class5"
+      ],
+      "screenshot": "images/screenshots/business-process-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class5"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class87",
+      "label": "Application Summary -",
+      "history_label": "Application Summary",
+      "xsl": "application/core_al_application_provider_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for an application.",
+      "classifications": [
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/application-provider-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class88",
+      "label": "Application Info/Data Summary",
+      "history_label": "Application Info/Data Summary -",
+      "xsl": "application/core_al_app_info_data_summary.xsl",
+      "is_enabled": true,
+      "description": "Summarises the information and data that  is managed by a given application.",
+      "classifications": [
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/information-data-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class89",
+      "label": "Technology Product Summary",
+      "history_label": "Technology Product Summary -",
+      "xsl": "technology/core_tl_tech_technology_product_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for a Technology Product",
+      "classifications": [
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class204"
+      ],
+      "screenshot": "images/screenshots/technology-product-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class204"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class90",
+      "label": "Organisation Structure Model",
+      "history_label": "Organisation Structure Model",
+      "xsl": "business/core_bl_bus_org_structure_model.xsl",
+      "is_enabled": true,
+      "description": "Defines the Organisational structure (hierarchical decomposition) as well as the Business Services delivered by each organisational unit and the site where these organisation units are located.",
+      "classifications": [
+        "Business Executive View Filter",
+        "IT Executive View Filter",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10010",
+        "viewer3_dev_12032012_Class10009",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/organisation-structure-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class91",
+      "label": "Business Service Summary",
+      "history_label": "Business Service Summary -",
+      "xsl": "business/core_bl_bus_service_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a Business Service (Product Type)",
+      "classifications": [
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class161"
+      ],
+      "screenshot": "images/screenshots/business-service-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class161"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class92",
+      "label": "Business Capability Summary -",
+      "history_label": "Business Capability Summary",
+      "xsl": "business/core_bl_bus_cap_summary_new.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a Business Capability",
+      "classifications": [
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v62_Class25"
+      ],
+      "screenshot": "images/screenshots/business-capability-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v62_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class93",
+      "label": "Business Process Summary",
+      "history_label": "Business Process Summary -",
+      "xsl": "business/core_bl_bus_process_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given logical Business Process",
+      "classifications": [
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class5"
+      ],
+      "screenshot": "images/screenshots/business-process-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class5"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class94",
+      "label": "Business Capability Issues",
+      "history_label": "Business Capability Issues -",
+      "xsl": "business/core_bl_bus_cap_issues.xsl",
+      "is_enabled": false,
+      "description": "Provides details of the issues associated with a given a Business Capability.",
+      "classifications": [
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v62_Class25"
+      ],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v62_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class95",
+      "label": "Data Object Summary -",
+      "history_label": "Data Object Summary",
+      "xsl": "information/core_il_data_object_summary_new.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given logical Data Object",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class736"
+      ],
+      "screenshot": "images/screenshots/data-object-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class736"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class96",
+      "label": "Data Subject Summary -",
+      "history_label": "Data Subject Summary",
+      "xsl": "information/core_il_data_subject_summary_new.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given conceptual Data Subject",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class176"
+      ],
+      "screenshot": "images/screenshots/data_subject_summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class176"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class97",
+      "label": "Information Concept Summary",
+      "history_label": "Information Concept Summary -",
+      "xsl": "information/core_il_inf_concept_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given Information Concept",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class192"
+      ],
+      "screenshot": "images/screenshots/information-concept-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class192"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class98",
+      "label": "Information View Summary",
+      "history_label": "Information View Summary -",
+      "xsl": "information/core_il_inf_object_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given logical Information Views",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class192"
+      ],
+      "screenshot": "images/screenshots/information-view-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class192"
+      ]
+    },
+    {
+      "id": "essential_baseline_v3.0.4_Class99",
+      "label": "Information Representation Summary",
+      "history_label": "Information Representation Summary -",
+      "xsl": "information/core_il_inf_rep_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given logical Information Representation",
+      "classifications": [
+        "Information Architecture Views",
+        "Architecture Governance View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class192"
+      ],
+      "screenshot": "images/screenshots/information-representation-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class192"
+      ]
+    },
+    {
+      "id": "essential_baseline_v4.0_Class1",
+      "label": "Physical Process Catalogue",
+      "history_label": "Physical Process Catalogue by Business Domain",
+      "xsl": "business/core_bl_physproc_list_by_domain.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Physical Business Processes in scope for the enterprise, organised by business domain.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/physical-process-catalogue-by-business-domain.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v4.0_Class3",
+      "label": "Application Catalogue",
+      "history_label": "Application Catalogue as Table",
+      "xsl": "application/core_al_app_provider_list_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Applications in use across the enterprise, presented as a table.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Information Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "viewer3_dev_12032012_Class10011",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-catalogue.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v4.0_Class4",
+      "label": "Application Service Catalogue",
+      "history_label": "Application Service Catalogue as Table",
+      "xsl": "application/core_al_app_service_list_table.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the logical applications services in scope for the enterprise, presented as a table.",
+      "classifications": [
+        "Project Delivery",
+        "Architecture Governance",
+        "Architecture Standards Management View Filter",
+        "Catalogue Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v4.0_Class5",
+      "label": "Business Process Catalogue",
+      "history_label": "Business Process Catalogue as Table",
+      "xsl": "business/core_bl_bus_process_list_as_table_filtered.xsl",
+      "is_enabled": true,
+      "description": "Application disposition model showing the disposition status of applications across theportfolio",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v4.0_Class6",
+      "label": "Technology Product Catalogue",
+      "history_label": "Technology Product Catalogue as Table",
+      "xsl": "technology/core_tl_tech_product_list_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Technology Products in use across the enterprise, presented as a table.",
+      "classifications": [
+        "Architecture Governance",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Architecture Standards Management View Filter",
+        "Architecture Governance View Filter",
+        "Catalogue Views",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10008",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class0",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-product-catalogue-as-table.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class736",
+      "label": "Data Object Catalogue",
+      "history_label": "Data Object Catalogue by Name",
+      "xsl": "information/core_il_data_object_list_by_name.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of concpetual Data Object, organised alphabetically by Data Subject.",
+      "classifications": [
+        "Information Architecture Views",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class737",
+      "label": "Data Subject Model",
+      "history_label": "Data Subject Model -",
+      "xsl": "information/core_il_data_subject_model.xsl",
+      "is_enabled": true,
+      "description": "Provides a graphical overview of the relationships of a given conceptual Data Subject",
+      "classifications": [
+        "Information Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class176"
+      ],
+      "screenshot": "images/screenshots/data-subject-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class176"
+      ]
+    },
+    {
+      "id": "essential_baseline_v505_Class738",
+      "label": "Technology Domain Summary",
+      "history_label": "Technology Domain Summary -",
+      "xsl": "technology/core_tl_tech_domain_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides an end to end summary of the key relationships that exist for a  Technology Domain",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-domain-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class739",
+      "label": "Technology Capability Summary",
+      "history_label": "Technology Capability Summary -",
+      "xsl": "technology/core_tl_tech_cap_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides an end to end summary of the key relationships that exist for a  Technology Capability",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-capability-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class740",
+      "label": "Data Representation Summary",
+      "history_label": "Data Representation Summary -",
+      "xsl": "information/core_il_data_rep_summary.xsl",
+      "is_enabled": true,
+      "description": "Shows the key relationships for a given Data Representation.",
+      "classifications": [
+        "Information Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class741"
+      ],
+      "screenshot": "images/screenshots/data-representation-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class741"
+      ]
+    },
+    {
+      "id": "essential_baseline_v505_Class741",
+      "label": "Data Representation Catalogue",
+      "history_label": "Data Representation Catalogue",
+      "xsl": "information/core_il_data_rep_catalogue_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Data Representations in scope for the enterprise, in a searchable table",
+      "classifications": [
+        "Information Architecture Views",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class742",
+      "label": "Information Store Summary",
+      "history_label": "Information Store Summary -",
+      "xsl": "information/core_il_info_store_summary.xsl",
+      "is_enabled": true,
+      "description": "Shows the key relationships for a given Information Store.",
+      "classifications": [
+        "Information Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class743"
+      ],
+      "screenshot": "images/screenshots/information-store-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class743"
+      ]
+    },
+    {
+      "id": "essential_baseline_v505_Class743",
+      "label": "Information Store Catalogue",
+      "history_label": "Information Store Catalogue",
+      "xsl": "information/core_il_info_store_catalogue_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Information Stores in scope for the enterprise, in a searchable table",
+      "classifications": [
+        "Information Architecture Views",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class744",
+      "label": "Physical Data Object",
+      "history_label": "Physical Data Object -",
+      "xsl": "information/core_il_phys_data_obj_summary.xsl",
+      "is_enabled": true,
+      "description": "Shows the key relationships for a given Physical Data Object.",
+      "classifications": [
+        "Information Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class745"
+      ],
+      "screenshot": "images/screenshots/physical-data-object-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class745"
+      ]
+    },
+    {
+      "id": "essential_baseline_v505_Class745",
+      "label": "Physical Data Object Catalogue",
+      "history_label": "Physical Data Object Catalogue",
+      "xsl": "information/core_il_phys_data_object_catalogue_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Physical Data Objects in scope for the enterprise, in a searchable table",
+      "classifications": [
+        "Information Architecture Views",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class746",
+      "label": "Data Object Model",
+      "history_label": "Data Object Model -",
+      "xsl": "information/core_il_data_object_model.xsl",
+      "is_enabled": true,
+      "description": "Provides a overview of the relationships of a given logical Data Object",
+      "classifications": [
+        "Information Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80010"
+      ],
+      "group_refs": [
+        "essential_baseline_v505_Class736"
+      ],
+      "screenshot": "images/screenshots/data-object-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v505_Class736"
+      ]
+    },
+    {
+      "id": "essential_baseline_v505_Class747",
+      "label": "Business Objective Catalogue",
+      "history_label": "Business Objective Catalogue",
+      "xsl": "business/core_bl_bus_objective_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "A list of Business Objectives organised alphabetically.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v505_Class752",
+      "label": "Application Strategic Radar",
+      "history_label": "Application Strategic Radar -",
+      "xsl": "application/core_al_app_strategic_radar.xsl",
+      "is_enabled": true,
+      "description": "Shows the lifecycle status for all Applications that support a given Business Capability",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v62_Class25"
+      ],
+      "screenshot": "images/screenshots/applications-status-for-business-capability.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v62_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v5_Class29",
+      "label": "Application Function Implementation Summary",
+      "history_label": "Application Function Implementation Summary -",
+      "xsl": "application/core_al_app_func_impl_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details for an application function implementation.",
+      "classifications": [
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/function-implementation-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class43",
+      "label": "Application Deployment Summary",
+      "history_label": "Application Deployment Summary -",
+      "xsl": "application/core_al_app_deployment_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the deployment details for an application.",
+      "classifications": [
+        "Technology Architect View Filter",
+        "Strategy Management View Filter",
+        "Architecture Governance View Filter",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Data Architect View Filter",
+        "Project Delivery View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class10007",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "viewer3_dev_12032012_Class10012",
+        "viewer3_dev_12032012_Class10005",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/application-deployment-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v5_Class72",
+      "label": "View Library",
+      "history_label": "View Library",
+      "xsl": "view_library.xsl",
+      "is_enabled": true,
+      "description": "Explore all views available to Essential Viewer organised by layer.",
+      "classifications": [],
+      "classification_ids": [],
+      "group_refs": [],
+      "screenshot": "images/758439_81008414.jpg",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class73",
+      "label": "Strategic Goals Model",
+      "history_label": "Strategic Goals Model",
+      "xsl": "business/core_bl_strategic_goals_model.xsl",
+      "is_enabled": true,
+      "description": "Defines the relationships between business drivers, business objectives and the measures or key performance indicators (KPI) used to measure achievement of the objectives.",
+      "classifications": [
+        "Enterprise Architecture Views",
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008",
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/strategic-goals-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class74",
+      "label": "Stakeholder Catalogue",
+      "history_label": "Stakeholder Catalogue",
+      "xsl": "enterprise/core_el_stakeholder_catalogue_by_name.xsl",
+      "is_enabled": true,
+      "description": "Lists the Individual Actors contained in the repository by name in alphabetical order.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/stakeholder-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class75",
+      "label": "Group Actor Catalogue",
+      "history_label": "Group Actor Catalogue",
+      "xsl": "enterprise/core_el_group_actor_catalogue_by_name.xsl",
+      "is_enabled": true,
+      "description": "Lists the Individual Actors contained in the repository by name in alphabetical order.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/group-actor-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class76",
+      "label": "Group Actor Summary",
+      "history_label": "Group Actor Summary",
+      "xsl": "enterprise/core_el_org_summary_new.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the details and key relationships of a given Group Actor",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [
+        "essential_baseline_v5_Class75"
+      ],
+      "screenshot": "images/screenshots/group-actor-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v5_Class75"
+      ]
+    },
+    {
+      "id": "essential_baseline_v5_Class77",
+      "label": "Home",
+      "history_label": "Home",
+      "xsl": "home.xsl",
+      "is_enabled": false,
+      "description": "This instance is used only to set the history label for the default Essential home page. Do not delete this instance even if the home page is changed.",
+      "classifications": [],
+      "classification_ids": [],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class81",
+      "label": "Technology Catalogue",
+      "history_label": "Technology Node Catalogue as Table",
+      "xsl": "technology/core_tl_tech_node_list_as_table.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the physical Technology Nodes in scope for the enterprise, in a searchable table",
+      "classifications": [
+        "Architecture Governance",
+        "Project Delivery",
+        "Technology Architecture Views",
+        "Technology Architect View Filter",
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "essential_baseline_v2.0_Class80015",
+        "essential_baseline_v2.0_Class80012",
+        "viewer3_dev_12032012_Class10002",
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v5_Class82",
+      "label": "Application Function Implementation Catalogue",
+      "history_label": "Application Function Implementation by Name",
+      "xsl": "application/core_al_app_func_impl_list_by_name.xsl",
+      "is_enabled": true,
+      "description": "Lists the Application Function Implementation contained in the repository by name in alphabetical order.",
+      "classifications": [
+        "Architecture Governance",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "application-function-implementation-catalogue-by-name.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class103",
+      "label": "All Instances by Class",
+      "history_label": "",
+      "xsl": "integration/core_int_all_instances_by_class.xsl",
+      "is_enabled": true,
+      "description": "Provides a list or table of all instances for a selected class",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/all-instances-by-class.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class104",
+      "label": "Class Overview",
+      "history_label": "",
+      "xsl": "integration/class_overview.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the slots associated with a selected class",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/class-overview.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class105",
+      "label": "Duplicate Dashboard - Key Classes",
+      "history_label": "",
+      "xsl": "integration/core_ut_duplicate_dashboard_filter.xsl",
+      "is_enabled": true,
+      "description": "Provides a dashboard summary of the level of possible duplication for the key classes in the repository",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/duplicate-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class106",
+      "label": "Instance Overview by ID",
+      "history_label": "",
+      "xsl": "integration/instance_overview.xsl",
+      "is_enabled": true,
+      "description": "Provides a slot level summary for an instance identified by an ID",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/instance-overview-by-id.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class107",
+      "label": "Instance Relationships as Tree",
+      "history_label": "",
+      "xsl": "integration/instance_relations_tree.xsl",
+      "is_enabled": true,
+      "description": "Provides a visual tree representation of the slot relationships for a selected instance",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/instance-relationships-as-tree.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class108",
+      "label": "IT Asset Dashboard View Checker",
+      "history_label": "IT Asset Dashboard View Checker",
+      "xsl": "enterprise/core_el_it_asset_dashboard_checker.xsl",
+      "is_enabled": true,
+      "description": "Provides a visual indication of the completeness of the modelling required to populate the IT Asset Dashboard view",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/IT-asset-checker.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class109",
+      "label": "Repository Completeness Check",
+      "history_label": "",
+      "xsl": "integration/core_ut_completeness_view.xsl",
+      "is_enabled": true,
+      "description": "Provides a dashboard summary of the level of completeness for a selected class",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/repository-completeness-check.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class110",
+      "label": "Technology Reference Model",
+      "history_label": "Technology Reference Model",
+      "xsl": "technology/core_tl_tech_ref_model_new.xsl",
+      "is_enabled": true,
+      "description": "Defines a standard, layered view of the logical Technology Components in scope for the enterprise.",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-reference-new.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class19",
+      "label": "IT Asset Dashboard",
+      "history_label": "IT Asset Dashboard",
+      "xsl": "enterprise/core_el_it_asset_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Provides a high level overview and analysis of the IT assets supporting the enterprise",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/it-asset-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class20",
+      "label": "Application Footprint Comparison",
+      "history_label": "Application Footprint Comparison",
+      "xsl": "application/core_al_app_footprint_comparison.xsl",
+      "is_enabled": true,
+      "description": "Supports comparison of the functional footprint of two applications",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/app-footprint-comparison.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class21",
+      "label": "Business Process Family Summary",
+      "history_label": "Business Process Family Summary",
+      "xsl": "business/core_bl_bus_process_family_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a summary of the Business Processes that are part of a given Business Process Family",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-process-family-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class22",
+      "label": "Strategic Technology Product Selector",
+      "history_label": "Strategic Technology Product Selector",
+      "xsl": "technology/core_tl_tech_product_selector.xsl",
+      "is_enabled": true,
+      "description": "An interactive view that can be used to select Technology Products for an IT solution that are in line with agreed standards",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/strategic-tech-product-selector.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class23",
+      "label": "Application Rationalisation Analysis",
+      "history_label": "Application Rationalisation Analysis",
+      "xsl": "application/core_al_app_rationalisation_analysis_simple.xsl",
+      "is_enabled": true,
+      "description": "Provides an interactive view than can be used to identify applications from the portfolio that implement common services and have the potential to replace a given application",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/app-rationalisation-analysis-simple.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class24",
+      "label": "IT Asset Dashboard View Checker",
+      "history_label": "IT Asset Dashboard View Checker",
+      "xsl": "enterprise/view-checkers/util_vc_el_it_asset_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Provides a visual indication of the completeness of the modelling required to populate the IT Asset Dashboard view",
+      "classifications": [],
+      "classification_ids": [],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v62_Class25",
+      "label": "Business Capability Catalogue",
+      "history_label": "Business Capability Catalogue as Table",
+      "xsl": "business/core_bl_bus_cap_list_as_table_filtered.xsl",
+      "is_enabled": true,
+      "description": "Dashboard of business capabilities with overlays",
+      "classifications": [
+        "Architecture Governance",
+        "Strategy Management View Filter",
+        "Catalogue Views",
+        "Business Architecture Views",
+        "Business Analyst View Filter",
+        "Application Architect View Filter"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80014",
+        "viewer3_dev_12032012_Class10004",
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009",
+        "viewer3_dev_12032012_Class10001",
+        "viewer3_dev_12032012_Class10013"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v64_Class21",
+      "label": "Strategy Planner",
+      "history_label": "Strategy Planner",
+      "xsl": "enterprise/core_el_strategy_planner_v2.xsl",
+      "is_enabled": true,
+      "description": "Provides an interactive view to analyse strategic objectives, value stream metrics and business capabilities to define strategic roadmaps",
+      "classifications": [
+        "Enterprise Architecture Views",
+        "Business Architecture Views",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008",
+        "essential_baseline_v2.0_Class80009",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/strategy-planner.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v64_Class22",
+      "label": "Business Process Location Map",
+      "history_label": "Business Process Location Map",
+      "xsl": "business/core_bl_process_location_map.xsl",
+      "is_enabled": true,
+      "description": "Provides an interactive view of the business processes performed across the locations in scope for the enterprise",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/process-location-map.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v64_Class23",
+      "label": "Location Summary",
+      "history_label": "Location Summary",
+      "xsl": "business/core_bl_location_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides a view of the business processes performed, and organisations located at a specific location.",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/location-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v64_Class25",
+      "label": "Value Stream Catalogue",
+      "history_label": "Value Stream Catalogue",
+      "xsl": "business/core_bl_value_stream_list_as_table.xsl",
+      "is_enabled": false,
+      "description": "Provides a list of the Value Streams in scope for the enterprise, presented as a table.",
+      "classifications": [
+        "Catalogue Views",
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0",
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/value-stream-catalogue-as-table.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v64_Class26",
+      "label": "Value Stream Summary",
+      "history_label": "Value Stream Summary -",
+      "xsl": "business/core_bl_value_stream_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides graphical view of the details for a given Value Stream",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v64_Class25"
+      ],
+      "screenshot": "images/screenshots/value-stream-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v64_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v64_Class27",
+      "label": "Technology Component Catalogue",
+      "history_label": "Technology Component Catalogue as Table",
+      "xsl": "technology/core_tl_technology_component_list_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Technology Components for the enterprise, organised as a table.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class1",
+      "label": "Slot Value Checker",
+      "history_label": "Slot Value Checker",
+      "xsl": "integration/core_int_slot_value_checker.xsl",
+      "is_enabled": true,
+      "description": "Identifies instances that have slots populated with instances of the wrong the class",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/slot-value-checker.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class10076",
+      "label": "Application Design Authority",
+      "history_label": "Application Design Authority",
+      "xsl": "application/core_al_app_design_authority.xsl",
+      "is_enabled": true,
+      "description": "Supports the Design Authority process with self-validation and printable output for use in the Design Authority process.",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/app-design-authority.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class10078",
+      "label": "Business Process Hierarchy",
+      "history_label": "Business Process Hierarchy",
+      "xsl": "business/core_bl_business_process_hierarchy.xsl",
+      "is_enabled": true,
+      "description": "Provides a process hierarchy where a process has sub-processes defined, e.g. APQC process models",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/bus-process-hierarchy.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class10080",
+      "label": "Enterprise Architecture Navigator",
+      "history_label": "Enterprise Architecture Navigator",
+      "xsl": "enterprise/core_el_interactive_instance_navigator.xsl",
+      "is_enabled": true,
+      "description": "Allows dynamic navigation between published instances in the repository",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/ent-arch-navigator.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class10082",
+      "label": "IT Asset Dashboard",
+      "history_label": "IT Asset Dashboard",
+      "xsl": "enterprise/core_el_it_asset_dashboard_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides a high level overview and analysis of the IT assets supporting the enterprise",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/it-asset-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_10_4_Class10084",
+      "label": "Technology Reference Model",
+      "history_label": "Technology Reference Model",
+      "xsl": "technology/core_tl_tech_ref_model_summary.xsl",
+      "is_enabled": false,
+      "description": "Defines a standard, layered view of the logical Technology Components in scope for the enterprise.",
+      "classifications": [
+        "Technology Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80012"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/technology-reference-model-2018.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_11.1_Class3",
+      "label": "IT Asset Dashboard",
+      "history_label": "IT Asset Dashboard",
+      "xsl": "enterprise/core_el_it_asset_dashboard_summary.xsl",
+      "is_enabled": false,
+      "description": "Provides a high level overview and analysis of the IT assets supporting the enterprise",
+      "classifications": [],
+      "classification_ids": [],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_12_Class66",
+      "label": "Launchpad Spreadsheet Exporter",
+      "history_label": "Launchpad Spreadsheet Exporter",
+      "xsl": "integration/core_el_launchpad_export.xsl",
+      "is_enabled": false,
+      "description": "Provides the ability to selectively export Launchpad worksheets based upon data, view or Essential Playbook requirements",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/launchpad-export.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_12_Class68",
+      "label": "Launchpad Plus Loaders",
+      "history_label": "Launchpad Plus Loaders",
+      "xsl": "integration/launchpad_loader.xsl",
+      "is_enabled": true,
+      "description": "Pre-populates files for Launchpad Plus spreadsheets",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/int_launchpad_plus.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Class1",
+      "label": "Business Capability Dashboard",
+      "history_label": "Business Capability Dashboard",
+      "xsl": "enterprise/core_el_bus_cap_analysis_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Dashboard for monitoring decisions within the organisation",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/bus-cap-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Class2",
+      "label": "Application Dependency Diagram",
+      "history_label": "Application Dependency Viewer",
+      "xsl": "application/core_al_application_dependency.xsl",
+      "is_enabled": true,
+      "description": "Graphical diagrams for each applicastion showing dependencies and high level interfaces",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-dependency.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Class3",
+      "label": "Application Disposition Model",
+      "history_label": "Application Disposition Model",
+      "xsl": "application/core_al_time_model_column.xsl",
+      "is_enabled": true,
+      "description": "Application disposition model showing the disposition status of applications across theportfolio",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-disposition-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Class4",
+      "label": "Decison Dashboard",
+      "history_label": "Decison Dashboard",
+      "xsl": "enterprise/core_el_decision_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Dashboard for monitoring decisions within the organisation",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/decision-dashboard.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Portal_Class1",
+      "label": "Application Capability Catalogue as Table",
+      "history_label": "Application Capability Catalogue",
+      "xsl": "application/core_al_app_cap_list_as_table_filtered.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Application Capabilities in scope for the enterprise, presented as a table.",
+      "classifications": [],
+      "classification_ids": [],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_13_Portal_Class6",
+      "label": "Lifecycle Viewer",
+      "history_label": "Lifecycle",
+      "xsl": "enterprise/core_el_lifecycle_viewer_v2.xsl",
+      "is_enabled": true,
+      "description": "View application and technology lifecycles by year and the impact of the products",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/lifecycle-viewer.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_9_Class0",
+      "label": "Application Cost Analysis",
+      "history_label": "Application Cost Analysis",
+      "xsl": "application/core_al_app_cost_analysis.xsl",
+      "is_enabled": true,
+      "description": "Provides a view of costs associated with the enterprise application portfolio",
+      "classifications": [
+        "Architecture Governance View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-cost-analysis.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "essential_baseline_v6_9_Class1",
+      "label": "Application Cost Summary",
+      "history_label": "Application Cost Summary -",
+      "xsl": "application/core_al_app_cost_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides a view of costs associated with the enterprise application portfolio",
+      "classifications": [
+        "Architecture Governance View Filter",
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10007",
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/application-cost-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "essential_baseline_v6_Class15",
+      "label": "Business Capability to Technology (Force)",
+      "history_label": "Business Capability to Technology (Force)",
+      "xsl": "business/core_bl_bus_cap_to_technology_force.xsl",
+      "is_enabled": true,
+      "description": "Shows the relationship between Business Capabilities and Technology via Applications using a force graph model",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v62_Class25"
+      ],
+      "screenshot": "images/screenshots/business-capability_technology_force.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v62_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v6_Class16",
+      "label": "Business Capability to Technology (Tree)",
+      "history_label": "Business Capability to Technology (Tree)",
+      "xsl": "business/core_bl_bus_cap_to_technology_tree.xsl",
+      "is_enabled": true,
+      "description": "Shows the relationship between Business Capabilities and Technology via Applications using a tree graph model",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v62_Class25"
+      ],
+      "screenshot": "images/screenshots/business-capability_technology_tree.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v62_Class25"
+      ]
+    },
+    {
+      "id": "essential_baseline_v6_Class183",
+      "label": "Application Software Architecture",
+      "history_label": "Application Software Architecture",
+      "xsl": "application/core_al_app_sw_arch_model2.xsl",
+      "is_enabled": true,
+      "description": "Software architecture of the selected application",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/software_architecture.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "store_1075_Class75",
+      "label": "BPMN Process Flow Modeler",
+      "history_label": "BPMN Process Flow Modeler",
+      "xsl": "editors/business/bpmn-flow-editor/bpmn_flow_modeller.xsl",
+      "is_enabled": true,
+      "description": "Capture the flow of a Business Process using the BPMN notation",
+      "classifications": [
+        "Business Architect View Filter",
+        "Business Analyst View Filter",
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class10014",
+        "viewer3_dev_12032012_Class10001",
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-process-model.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1075_Class76",
+      "label": "EA Assistant",
+      "history_label": "EA Assistant",
+      "xsl": "ext/core_el_ea_assistant.xsl",
+      "is_enabled": true,
+      "description": "EA Assistant help you with the management of you EA, data and set-up, including Playbook Coach, excel import and export, portal configuration",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/ea-assistant.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1075_Class77",
+      "label": "Drag and Drop Data Capture",
+      "history_label": "Drag and Drop Data Capture",
+      "xsl": "ext/ext_essential_drag_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Bulk mapping of data through drag and drop modelling",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/draganddrop.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class10",
+      "label": "Business Glossary",
+      "history_label": "Business Glossary",
+      "xsl": "business/core_bl_business_glossary.xsl",
+      "is_enabled": true,
+      "description": "A glossary of business terms with synonyms and related terms",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-glossary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class11",
+      "label": "Enterprise Debt Manager",
+      "history_label": "Enterprise Debt Manager",
+      "xsl": "enterprise/core_el_enterprise_debt.xsl",
+      "is_enabled": true,
+      "description": "A comprehensive report providing insights into technical debt across the enterprise, helping stakeholders identify, assess, and prioritise areas for remediation. Designed to support informed decision-making and drive continuous improvement",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/enterprise-debt.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class6",
+      "label": "Technology Domain Catalogue as Table",
+      "history_label": "Technology Domain Catalogue",
+      "xsl": "technology/core_tl_technology_domain_list_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Technology Domains for the enterprise, organised as a table.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class7",
+      "label": "Technology Capability Catalogue as Table",
+      "history_label": "Technology Capability Catalogue",
+      "xsl": "technology/core_tl_technology_capability_list_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Technology Capabilities for the enterprise, organised as a table.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class8",
+      "label": "Issues Catalogue as Table",
+      "history_label": "Issues Catalogue",
+      "xsl": "enterprise/core_el_issue_catalogue_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Issues for the enterprise, organised as a table.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1423_Class9",
+      "label": "Information Representation Catalogue as Table",
+      "history_label": "Information Representation Catalogue",
+      "xsl": "information/core_il_info_rep_list_as_table.xsl",
+      "is_enabled": true,
+      "description": "Provides a list of the Information Representations for the enterprise, organised as a table.",
+      "classifications": [
+        "Catalogue Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_12032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_142_Class146",
+      "label": "Business Strategy Overview",
+      "history_label": "Business Strategy Overview",
+      "xsl": "enterprise/core_el_strategy_viewer.xsl",
+      "is_enabled": true,
+      "description": "Provides a breakdown of strategic drivers goals and objectives with associated plans",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/bus-strat-view.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_1_Class20010",
+      "label": "PowerPoint Manager",
+      "history_label": "PowerPoint Manager",
+      "xsl": "integration/core_el_powerpoint_central.xsl",
+      "is_enabled": true,
+      "description": "Powerpoint generation of several views",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/powerpoint-manager.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_43_Class77",
+      "label": "Viewer Configurator",
+      "history_label": "Viewer Configurator",
+      "xsl": "ext/shared/ess_portal_builder.xsl",
+      "is_enabled": true,
+      "description": "Configure Essential view settings and set up portals",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/portal-builder.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_43_Class78",
+      "label": "Business Domain Summary",
+      "history_label": "Business Domain Summary for",
+      "xsl": "business/core_bl_bus_domain_summary.xsl",
+      "is_enabled": true,
+      "description": "Provides an end to end summary of the key relationships that exist for a Business Domain",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [
+        "essential_baseline_v3.0.4_Class153"
+      ],
+      "screenshot": "images/screenshots/business-domain-summary.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v3.0.4_Class153"
+      ]
+    },
+    {
+      "id": "store_55_Class82",
+      "label": "Application Connections",
+      "history_label": "Application Connections",
+      "xsl": "application/core_al_application_connections.xsl",
+      "is_enabled": true,
+      "description": "Interfaces between applications filtered by Application Capability",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/app-connections.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class43",
+      "label": "Application Landscape",
+      "history_label": "Application Landscape",
+      "xsl": "application/core_al_application_overlay.xsl",
+      "is_enabled": true,
+      "description": "Application to Business Capability mapping with overlays",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-overlay.jpeg",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class44",
+      "label": "Essential Framework Manager",
+      "history_label": "Essential Framework Manager",
+      "xsl": "enterprise/core_el_framework_manager.xsl",
+      "is_enabled": true,
+      "description": "Allows you to capture frameworks and map them to elements in the architecture.  You can also then see assessments against controls in the framework to manage alignment",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/framework_manager.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class45",
+      "label": "Issues Catalogue",
+      "history_label": "Issues Catalogue",
+      "xsl": "enterprise/core_el_issues_catalogue.xsl",
+      "is_enabled": true,
+      "description": "Catalogue of issues with status, priority and impacts",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/issues_register.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class46",
+      "label": "Essential Capability Set-Up",
+      "history_label": "Essential Capability Set-Up",
+      "xsl": "ext/shared/ess_set_up_manager.xsl",
+      "is_enabled": true,
+      "description": "Loads predefined capability models, and helps create placeholder processes and application services",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/setup-editor.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class47",
+      "label": "Application to Process RPO/RTO",
+      "history_label": "Application to Process RPO/RTO",
+      "xsl": "application/core_al_bus_process_to_app_rto_rpo.xsl",
+      "is_enabled": true,
+      "description": "Application RPO/RTOs for processes with breakdown of required RPO/RTO vs actual applications",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/process-app-rporto.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class48",
+      "label": "Application Dashboard",
+      "history_label": "Application Dashboard",
+      "xsl": "application/core_al_application_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Filterable application dashboard, allowing the applications to be sliced by multiple dimensions",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/application-dashboard.jpeg",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_82_Class49",
+      "label": "Application Information Dependency Model",
+      "history_label": "Application Information Dependency Model",
+      "xsl": "application/core_al_app_provider_info_deps_model_json.xsl",
+      "is_enabled": true,
+      "description": "Graphically represents the inbound and outbound exchanges of Information for a given Application",
+      "classifications": [
+        "Application Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80011"
+      ],
+      "group_refs": [
+        "essential_baseline_v4.0_Class3"
+      ],
+      "screenshot": "images/screenshots/app-info-dependency-json.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": [
+        "essential_baseline_v4.0_Class3"
+      ]
+    },
+    {
+      "id": "store_82_Class50",
+      "label": "Business Capability Tree",
+      "history_label": "Business Capability Tree",
+      "xsl": "enterprise/core_el_bus_cap_tree.xsl",
+      "is_enabled": true,
+      "description": "Tree based view that shows the mapping from capabilities to apps and related strategic plans",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/bus-cap-tree.jpeg",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_992_Class31",
+      "label": "Roadmap Dashboard",
+      "history_label": "Roadmap Dashboard",
+      "xsl": "enterprise/core_el_plans_dashboard.xsl",
+      "is_enabled": true,
+      "description": "Overview of roadmaps and their supporting strategic plans, projects and impacts",
+      "classifications": [
+        "Enterprise Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80008"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/plans_dashboard.jpeg",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_992_Class32",
+      "label": "Value Streams Application Mapping",
+      "history_label": "Value Streams Application Mapping",
+      "xsl": "business/core_bl_value_streams.xsl",
+      "is_enabled": true,
+      "description": "Mapping of value streams with applications supporting them by organisation",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/value-stream-apps.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_992_Class33",
+      "label": "Business Process Hierarchy Application Mapping",
+      "history_label": "Business Process Hierarchy Application Mapping",
+      "xsl": "business/core_bl_process_maps.xsl",
+      "is_enabled": true,
+      "description": "Mapping of sub business processes with applications supporting them by organisation",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/business-process-hierachy-apps.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_992_Class34",
+      "label": "Value Stream Canvas",
+      "history_label": "Value Stream Canvas",
+      "xsl": "business/core_bl_value_stream_canvas.xsl",
+      "is_enabled": true,
+      "description": "Value stream canvas, showing a single view of the scope of the value stream",
+      "classifications": [
+        "Business Architecture Views"
+      ],
+      "classification_ids": [
+        "essential_baseline_v2.0_Class80009"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/value-stream-canvas.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    },
+    {
+      "id": "store_992_Class421",
+      "label": "Essential Playbook Coach",
+      "history_label": "Essential Playbook Coach",
+      "xsl": "enterprise/core_el_playbook_coach.xsl",
+      "is_enabled": false,
+      "description": "Essential Playbook Coach provides a series of questions that allows the best play to be suggested to you",
+      "classifications": [
+        "Support Views"
+      ],
+      "classification_ids": [
+        "viewer3_dev_14032012_Class0"
+      ],
+      "group_refs": [],
+      "screenshot": "images/screenshots/essential-playbook-coach.png",
+      "implementation_type": "viewer3_devrep_14032012_003_Class10015",
+      "groups": []
+    }
+  ],
+  "report_groups": {
+    "essential_baseline_v1_Instance_30120": "Architecture Strategy Management Reports",
+    "essential_baseline_v1_Instance_30121": "Architecture Standards Management Reports",
+    "essential_prj_CC_v1.4.2_Instance_10025": "Architecture Governance Reports",
+    "essential_prj_CC_v1.4.2_Instance_10026": "Project Delivery Reports",
+    "essential_prj_CC_v1.4.2_Instance_210154": "Reports being worked on - do not use"
+  },
+  "taxonomy_terms": {
+    "essential_baseline_v2.0_Class10007": "Company",
+    "essential_baseline_v2.0_Class10008": "Personal",
+    "essential_baseline_v2.0_Class10009": "Team",
+    "essential_baseline_v2.0_Class50001": "Continent",
+    "essential_baseline_v2.0_Class50002": "Country",
+    "essential_baseline_v2.0_Class50003": "State",
+    "essential_baseline_v2.0_Class50004": "Geopolitical Region",
+    "essential_baseline_v2.0_Class80008": "Enterprise Architecture Views",
+    "essential_baseline_v2.0_Class80009": "Business Architecture Views",
+    "essential_baseline_v2.0_Class80010": "Information Architecture Views",
+    "essential_baseline_v2.0_Class80011": "Application Architecture Views",
+    "essential_baseline_v2.0_Class80012": "Technology Architecture Views",
+    "essential_baseline_v2.0_Class80013": "Integration Extract Views",
+    "essential_baseline_v2.0_Class80014": "Architecture Governance",
+    "essential_baseline_v2.0_Class80015": "Project Delivery",
+    "essential_baseline_v2.0_Class80016": "Architecture Strategy Management",
+    "essential_baseline_v2.0_Class80017": "Architecture Standards Management",
+    "essential_baseline_v2.0_Class80018": "Under Construction",
+    "essential_baseline_v2.0_Class90020": "Internal",
+    "essential_baseline_v2.0_Class90021": "External",
+    "essential_baseline_v2.0_Class90022": "Gap",
+    "essential_baseline_v2.0_Class90042": "Opportunity",
+    "essential_baseline_v3.0.3_Class30000": "Gap Reports",
+    "essential_baseline_v3.0.4_Class126": "Change Analysis",
+    "essential_baseline_v3.0.4_Class127": "Business Architecture Layer",
+    "essential_baseline_v3.0.4_Class128": "Information Architecture Layer",
+    "essential_baseline_v3.0.4_Class129": "Application Architecture Layer",
+    "essential_baseline_v3.0.4_Class130": "Technology Architecture Layer",
+    "essential_baseline_v3.0.4_Class131": "Cross-Domain Architecture Layer",
+    "essential_baseline_v3.5_Class11": "Customer Interaction",
+    "essential_baseline_v3.5_Class12": "Partner Interaction",
+    "essential_baseline_v3.5_Class13": "Supplier Interaction",
+    "essential_baseline_v3.5_Class15": "Expectation",
+    "essential_baseline_v3.5_Class16": "Customer Value Proposition",
+    "essential_baseline_v3.5_Class18": "Business Service",
+    "essential_baseline_v3.5_Class19": "Offering",
+    "essential_baseline_v3.5_Class8": "Organisational Brand",
+    "essential_baseline_v3.5_Class9": "Product Brand",
+    "essential_baseline_v505_Class10": "Enabling",
+    "essential_baseline_v505_Class11": "Management",
+    "essential_baseline_v505_Class12": "Foundation",
+    "essential_baseline_v505_Class13": "Shared",
+    "essential_baseline_v505_Class14": "Core",
+    "essential_baseline_v505_Class6": "System of Innovation",
+    "essential_baseline_v505_Class7": "System of Record",
+    "essential_baseline_v505_Class8": "System of Differentiation",
+    "essential_baseline_v5_Class10": "Standard Data Management",
+    "essential_baseline_v5_Class26": "SFIA",
+    "essential_baseline_v5_Class34": "Business User Application",
+    "essential_baseline_v5_Class35": "Application Module",
+    "essential_baseline_v5_Class36": "Integration Module",
+    "essential_baseline_v5_Class38": "Shared Application Capability",
+    "essential_baseline_v5_Class39": "Core Application Capability",
+    "essential_baseline_v5_Class40": "Management Application Capability",
+    "essential_baseline_v5_Class41": "Foundation Application Capability",
+    "essential_baseline_v5_Class42": "Enabling Application Capability",
+    "essential_baseline_v5_Class47": "1",
+    "essential_baseline_v5_Class48": "2",
+    "essential_baseline_v5_Class49": "3",
+    "essential_baseline_v5_Class50": "4",
+    "essential_baseline_v5_Class51": "5",
+    "essential_baseline_v5_Class52": "6",
+    "essential_baseline_v5_Class53": "7",
+    "essential_baseline_v5_Class54": "8",
+    "essential_baseline_v5_Class55": "9",
+    "essential_baseline_v5_Class56": "10",
+    "essential_baseline_v5_Class57": "11",
+    "essential_baseline_v5_Class58": "12",
+    "essential_baseline_v5_Class59": "13",
+    "essential_baseline_v5_Class60": "14",
+    "essential_baseline_v5_Class61": "15",
+    "essential_baseline_v5_Class62": "16",
+    "essential_baseline_v5_Class63": "17",
+    "essential_baseline_v5_Class64": "18",
+    "essential_baseline_v5_Class65": "19",
+    "essential_baseline_v5_Class66": "20",
+    "essential_baseline_v5_Class79": "Spreadsheet Import Views",
+    "essential_baseline_v5_Class9": "Standard Data Usage",
+    "essential_baseline_v62_Class10": "Left",
+    "essential_baseline_v62_Class11": "Right",
+    "essential_baseline_v62_Class12": "Top",
+    "essential_baseline_v62_Class13": "Middle",
+    "essential_baseline_v62_Class14": "Bottom",
+    "essential_baseline_v62_Class38": "Creation Change",
+    "essential_baseline_v62_Class39": "Enhancement Change",
+    "essential_baseline_v62_Class40": "Reduction Change",
+    "essential_baseline_v62_Class41": "Removal Change",
+    "essential_baseline_v62_Class42": "No Change",
+    "essential_baseline_v64_Class2": "Internal Lifecycle",
+    "essential_baseline_v64_Class3": "Vendor Lifecycle",
+    "essential_baseline_v64_Class4": "Project Lifecycle",
+    "essential_baseline_v6_10_4_Class10004": "Operational Framework",
+    "essential_baseline_v6_10_4_Class10005": "Governance Framework",
+    "essential_baseline_v6_9_Class18": "Main Contract Document",
+    "essential_baseline_v6_9_Class19": "Contract Addendum",
+    "essential_baseline_v6_Class180": "More Info Doc Link",
+    "essential_baseline_v6_Class181": "Sample Data Link",
+    "store_55_Class77": "Dashboard API",
+    "store_55_Class79": "SYS_PROJECT_IN_PLANNING",
+    "store_55_Class80": "SYS_PROJECT_EXECUTION",
+    "store_55_Class81": "SYS_PROJECT_ENDED",
+    "store_82_Class42": "Deprecated Views",
+    "viewer3_dev_12032012_Class0": "Catalogue Views",
+    "viewer3_dev_12032012_Class10001": "Business Analyst View Filter",
+    "viewer3_dev_12032012_Class10002": "Technology Architect View Filter",
+    "viewer3_dev_12032012_Class10004": "Strategy Management View Filter",
+    "viewer3_dev_12032012_Class10005": "Project Delivery View Filter",
+    "viewer3_dev_12032012_Class10007": "Architecture Governance View Filter",
+    "viewer3_dev_12032012_Class10008": "Architecture Standards Management View Filter",
+    "viewer3_dev_12032012_Class10009": "IT Executive View Filter",
+    "viewer3_dev_12032012_Class10010": "Business Executive View Filter",
+    "viewer3_dev_12032012_Class10011": "Information Architect View Filter",
+    "viewer3_dev_12032012_Class10012": "Data Architect View Filter",
+    "viewer3_dev_12032012_Class10013": "Application Architect View Filter",
+    "viewer3_dev_12032012_Class10014": "Business Architect View Filter",
+    "viewer3_dev_12032012_Class20010": "Business Domain Layer 2",
+    "viewer3_dev_12032012_Class20011": "Business Domain Layer 1",
+    "viewer3_dev_12032012_Class20012": "Configuration Technology Capability Layer",
+    "viewer3_dev_12032012_Class20013": "Monitoring Technology Capability Layer",
+    "viewer3_dev_12032012_Class20014": "Platform Technology Capability Layer",
+    "viewer3_dev_12032012_Class20015": "Technology Capability Layer 1",
+    "viewer3_dev_12032012_Class20016": "Technology Capability Layer 2",
+    "viewer3_dev_12032012_Class20017": "Technology Capability Layer 3",
+    "viewer3_dev_12032012_Class20018": "Technology Capability Layer 4",
+    "viewer3_dev_12032012_Class20019": "Technology Capability Layer Other",
+    "viewer3_dev_12032012_Class20020": "Level 1 - App Level 1",
+    "viewer3_dev_12032012_Class20021": "Level 2 - App Level 2",
+    "viewer3_dev_12032012_Class20022": "Level 3 - App Level 3",
+    "viewer3_dev_12032012_Class20023": "Level 4 - App Level 4",
+    "viewer3_dev_12032012_Class20024": "Technology Capability Layer 5",
+    "viewer3_dev_12032012_Class20025": "Level 5 - App Level 5",
+    "viewer3_dev_12032012_Class20026": "Level 6 - App Level 6",
+    "viewer3_dev_12032012_Class20027": "Business Domain Layer 4",
+    "viewer3_dev_12032012_Class20028": "Business Domain Layer 5",
+    "viewer3_dev_12032012_Class20029": "Business Domain Layer 6",
+    "viewer3_dev_12032012_Class20030": "Business Domain Layer 3",
+    "viewer3_dev_12032012_Class20031": "Primary",
+    "viewer3_dev_12032012_Class20032": "Secondary",
+    "viewer3_dev_12032012_Class20033": "Front End Tier",
+    "viewer3_dev_12032012_Class20034": "Middle Tier",
+    "viewer3_dev_12032012_Class20035": "Back End Tier",
+    "viewer3_dev_14032012_Class0": "Support Views",
+    "viewer3_devrep_24042012_003_Class1": "Logical Technology Environment",
+    "viewer3_devrep_24042012_003_Class2": "Logical Technology Platform"
+  }
+}

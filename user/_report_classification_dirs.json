@@ -1,0 +1,495 @@
+[
+  {
+    "classification": "Enterprise Architecture Views",
+    "dir_counts": [
+      [
+        "enterprise",
+        28
+      ],
+      [
+        "business",
+        2
+      ],
+      [
+        "application",
+        2
+      ]
+    ]
+  },
+  {
+    "classification": "Technology Architecture Views",
+    "dir_counts": [
+      [
+        "technology",
+        22
+      ],
+      [
+        "enterprise",
+        4
+      ]
+    ]
+  },
+  {
+    "classification": "Project Delivery",
+    "dir_counts": [
+      [
+        "enterprise",
+        8
+      ],
+      [
+        "application",
+        6
+      ],
+      [
+        "technology",
+        5
+      ],
+      [
+        "information",
+        5
+      ],
+      [
+        "business",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Architecture Governance",
+    "dir_counts": [
+      [
+        "technology",
+        9
+      ],
+      [
+        "application",
+        8
+      ],
+      [
+        "information",
+        5
+      ],
+      [
+        "business",
+        3
+      ]
+    ]
+  },
+  {
+    "classification": "Catalogue Views",
+    "dir_counts": [
+      [
+        "technology",
+        13
+      ],
+      [
+        "business",
+        11
+      ],
+      [
+        "information",
+        10
+      ],
+      [
+        "application",
+        8
+      ],
+      [
+        "enterprise",
+        7
+      ]
+    ]
+  },
+  {
+    "classification": "Business Analyst View Filter",
+    "dir_counts": [
+      [
+        "business",
+        15
+      ],
+      [
+        "application",
+        14
+      ],
+      [
+        "technology",
+        4
+      ],
+      [
+        "enterprise",
+        3
+      ],
+      [
+        "editors",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Application Architect View Filter",
+    "dir_counts": [
+      [
+        "application",
+        18
+      ],
+      [
+        "business",
+        15
+      ],
+      [
+        "information",
+        13
+      ],
+      [
+        "technology",
+        12
+      ],
+      [
+        "enterprise",
+        12
+      ]
+    ]
+  },
+  {
+    "classification": "Project Delivery View Filter",
+    "dir_counts": [
+      [
+        "application",
+        15
+      ],
+      [
+        "technology",
+        12
+      ],
+      [
+        "business",
+        12
+      ],
+      [
+        "information",
+        11
+      ],
+      [
+        "enterprise",
+        3
+      ]
+    ]
+  },
+  {
+    "classification": "Information Architect View Filter",
+    "dir_counts": [
+      [
+        "enterprise",
+        11
+      ],
+      [
+        "application",
+        6
+      ],
+      [
+        "information",
+        3
+      ],
+      [
+        "business",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Application Architecture Views",
+    "dir_counts": [
+      [
+        "application",
+        30
+      ],
+      [
+        "enterprise",
+        2
+      ],
+      [
+        "technology",
+        1
+      ],
+      [
+        "business",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Information Architecture Views",
+    "dir_counts": [
+      [
+        "information",
+        25
+      ]
+    ]
+  },
+  {
+    "classification": "Architecture Governance View Filter",
+    "dir_counts": [
+      [
+        "information",
+        12
+      ],
+      [
+        "enterprise",
+        12
+      ],
+      [
+        "application",
+        11
+      ],
+      [
+        "technology",
+        10
+      ],
+      [
+        "business",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Data Architect View Filter",
+    "dir_counts": [
+      [
+        "information",
+        16
+      ],
+      [
+        "enterprise",
+        12
+      ],
+      [
+        "business",
+        12
+      ],
+      [
+        "technology",
+        11
+      ],
+      [
+        "application",
+        7
+      ]
+    ]
+  },
+  {
+    "classification": "Technology Architect View Filter",
+    "dir_counts": [
+      [
+        "technology",
+        15
+      ],
+      [
+        "application",
+        5
+      ],
+      [
+        "enterprise",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Strategy Management View Filter",
+    "dir_counts": [
+      [
+        "enterprise",
+        12
+      ],
+      [
+        "application",
+        8
+      ],
+      [
+        "technology",
+        6
+      ],
+      [
+        "business",
+        4
+      ],
+      [
+        "information",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Architecture Strategy Management",
+    "dir_counts": [
+      [
+        "enterprise",
+        8
+      ],
+      [
+        "information",
+        2
+      ]
+    ]
+  },
+  {
+    "classification": "Business Executive View Filter",
+    "dir_counts": [
+      [
+        "enterprise",
+        10
+      ],
+      [
+        "business",
+        3
+      ]
+    ]
+  },
+  {
+    "classification": "IT Executive View Filter",
+    "dir_counts": [
+      [
+        "enterprise",
+        10
+      ],
+      [
+        "business",
+        2
+      ],
+      [
+        "technology",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Business Architect View Filter",
+    "dir_counts": [
+      [
+        "business",
+        13
+      ],
+      [
+        "enterprise",
+        9
+      ],
+      [
+        "information",
+        3
+      ],
+      [
+        "editors",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Deprecated Views",
+    "dir_counts": [
+      [
+        "technology",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Architecture Standards Management",
+    "dir_counts": [
+      [
+        "information",
+        4
+      ],
+      [
+        "technology",
+        1
+      ],
+      [
+        "application",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Architecture Standards Management View Filter",
+    "dir_counts": [
+      [
+        "technology",
+        7
+      ],
+      [
+        "application",
+        3
+      ],
+      [
+        "enterprise",
+        2
+      ],
+      [
+        "business",
+        1
+      ],
+      [
+        "information",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Business Architecture Views",
+    "dir_counts": [
+      [
+        "business",
+        33
+      ],
+      [
+        "application",
+        2
+      ],
+      [
+        "enterprise",
+        2
+      ],
+      [
+        "editors",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Unclassified",
+    "dir_counts": [
+      [
+        "enterprise",
+        2
+      ],
+      [
+        "view_library.xsl",
+        1
+      ],
+      [
+        "home.xsl",
+        1
+      ],
+      [
+        "application",
+        1
+      ]
+    ]
+  },
+  {
+    "classification": "Support Views",
+    "dir_counts": [
+      [
+        "integration",
+        10
+      ],
+      [
+        "ext",
+        4
+      ],
+      [
+        "enterprise",
+        2
+      ]
+    ]
+  }
+]

@@ -1,0 +1,640 @@
+[
+  {
+    "classification": "Application Architect View Filter",
+    "active_count": 51,
+    "total_count": 70,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Diversity Analysis",
+        "xsl": "application/core_al_app_diversity_analysis.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Application Architecture Views",
+    "active_count": 30,
+    "total_count": 34,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Connections",
+        "xsl": "application/core_al_application_connections.xsl"
+      },
+      {
+        "label": "Application Cost Analysis",
+        "xsl": "application/core_al_app_cost_analysis.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Architecture Governance",
+    "active_count": 11,
+    "total_count": 25,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Function Implementation Catalogue",
+        "xsl": "application/core_al_app_func_impl_list_by_name.xsl"
+      },
+      {
+        "label": "Application Interface Catalogue",
+        "xsl": "application/core_al_app_interface_list_table.xsl"
+      },
+      {
+        "label": "Application Service Catalogue",
+        "xsl": "application/core_al_app_service_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Architecture Governance View Filter",
+    "active_count": 37,
+    "total_count": 46,
+    "sample": [
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Cost Analysis",
+        "xsl": "application/core_al_app_cost_analysis.xsl"
+      },
+      {
+        "label": "Application Cost Summary",
+        "xsl": "application/core_al_app_cost_summary.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Diversity Analysis",
+        "xsl": "application/core_al_app_diversity_analysis.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Architecture Standards Management",
+    "active_count": 3,
+    "total_count": 6,
+    "sample": [
+      {
+        "label": "Application Diversity Analysis",
+        "xsl": "application/core_al_app_diversity_analysis.xsl"
+      },
+      {
+        "label": "Application Technology Strategy Alignment",
+        "xsl": "technology/core_tl_app_tech_alignment.xsl"
+      },
+      {
+        "label": "Data Catalogue",
+        "xsl": "information/core_il_data_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Architecture Standards Management View Filter",
+    "active_count": 8,
+    "total_count": 14,
+    "sample": [
+      {
+        "label": "Application Diversity Analysis",
+        "xsl": "application/core_al_app_diversity_analysis.xsl"
+      },
+      {
+        "label": "Application Reference Model",
+        "xsl": "enterprise/core_al_app_ref_dashboard.xsl"
+      },
+      {
+        "label": "Application Service Catalogue",
+        "xsl": "application/core_al_app_service_list_by_name.xsl"
+      },
+      {
+        "label": "Application Technology Strategy Alignment",
+        "xsl": "technology/core_tl_app_tech_alignment.xsl"
+      },
+      {
+        "label": "Business Domain Process Analysis",
+        "xsl": "business/core_bl_bus_cap_analysis_by_bus_domain.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Architecture Strategy Management",
+    "active_count": 7,
+    "total_count": 10,
+    "sample": [
+      {
+        "label": "Programme Catalogue",
+        "xsl": "enterprise/core_el_programme_catalogue_by_name.xsl"
+      },
+      {
+        "label": "Programme Plan",
+        "xsl": "enterprise/core_el_programme_plan.xsl"
+      },
+      {
+        "label": "Programme Summary",
+        "xsl": "enterprise/core_el_programme_summary.xsl"
+      },
+      {
+        "label": "Project Catalogue",
+        "xsl": "enterprise/core_el_project_catalogue.xsl"
+      },
+      {
+        "label": "Project People Network",
+        "xsl": "enterprise/core_el_project_people_network.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Business Analyst View Filter",
+    "active_count": 26,
+    "total_count": 37,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Function Implementation Catalogue",
+        "xsl": "application/core_al_app_func_impl_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Business Architect View Filter",
+    "active_count": 19,
+    "total_count": 26,
+    "sample": [
+      {
+        "label": "BPMN Process Flow Modeler",
+        "xsl": "editors/business/bpmn-flow-editor/bpmn_flow_modeller.xsl"
+      },
+      {
+        "label": "Business Capability Summary -",
+        "xsl": "business/core_bl_bus_cap_summary_new.xsl"
+      },
+      {
+        "label": "Business Function/Service Model",
+        "xsl": "business/core_bl_bus_function_service_model.xsl"
+      },
+      {
+        "label": "Business Process Catalogue",
+        "xsl": "business/core_bl_bus_process_list_as_table_filtered.xsl"
+      },
+      {
+        "label": "Business Process Model",
+        "xsl": "business/core_bl_bus_process_model.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Business Architecture Views",
+    "active_count": 30,
+    "total_count": 38,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Function Implementation Catalogue",
+        "xsl": "application/core_al_app_func_impl_list_by_name.xsl"
+      },
+      {
+        "label": "BPMN Process Flow Modeler",
+        "xsl": "editors/business/bpmn-flow-editor/bpmn_flow_modeller.xsl"
+      },
+      {
+        "label": "Business Capability Catalogue",
+        "xsl": "business/core_bl_bus_cap_list_as_table_filtered.xsl"
+      },
+      {
+        "label": "Business Capability Summary -",
+        "xsl": "business/core_bl_bus_cap_summary_new.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Business Executive View Filter",
+    "active_count": 12,
+    "total_count": 13,
+    "sample": [
+      {
+        "label": "Business Function/Service Model",
+        "xsl": "business/core_bl_bus_function_service_model.xsl"
+      },
+      {
+        "label": "Business Service Interaction Model",
+        "xsl": "business/core_bl_bus_svc_interaction_model.xsl"
+      },
+      {
+        "label": "EA Principles",
+        "xsl": "enterprise/core_el_ea_principles_cat.xsl"
+      },
+      {
+        "label": "Organisation Structure Model",
+        "xsl": "business/core_bl_bus_org_structure_model.xsl"
+      },
+      {
+        "label": "Programme Catalogue",
+        "xsl": "enterprise/core_el_programme_catalogue_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Catalogue Views",
+    "active_count": 28,
+    "total_count": 49,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Function Implementation Catalogue",
+        "xsl": "application/core_al_app_func_impl_list_by_name.xsl"
+      },
+      {
+        "label": "Application Interface Catalogue",
+        "xsl": "application/core_al_app_interface_list_table.xsl"
+      },
+      {
+        "label": "Application Service Catalogue",
+        "xsl": "application/core_al_app_service_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Data Architect View Filter",
+    "active_count": 41,
+    "total_count": 58,
+    "sample": [
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Function Implementation Summary",
+        "xsl": "application/core_al_app_func_impl_summary.xsl"
+      },
+      {
+        "label": "Application Info/Data Summary",
+        "xsl": "application/core_al_app_info_data_summary.xsl"
+      },
+      {
+        "label": "Application Information Dependency Model",
+        "xsl": "application/core_al_app_provider_info_deps_model.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Deprecated Views",
+    "active_count": 0,
+    "total_count": 1,
+    "sample": []
+  },
+  {
+    "classification": "Enterprise Architecture Views",
+    "active_count": 29,
+    "total_count": 32,
+    "sample": [
+      {
+        "label": "Application Design Authority",
+        "xsl": "application/core_al_app_design_authority.xsl"
+      },
+      {
+        "label": "Application Footprint Comparison",
+        "xsl": "application/core_al_app_footprint_comparison.xsl"
+      },
+      {
+        "label": "Business Capability Dashboard",
+        "xsl": "enterprise/core_el_bus_cap_analysis_dashboard.xsl"
+      },
+      {
+        "label": "Business Process Location Map",
+        "xsl": "business/core_bl_process_location_map.xsl"
+      },
+      {
+        "label": "Business Strategy Overview",
+        "xsl": "enterprise/core_el_strategy_viewer.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "IT Executive View Filter",
+    "active_count": 11,
+    "total_count": 13,
+    "sample": [
+      {
+        "label": "Business Function/Service Model",
+        "xsl": "business/core_bl_bus_function_service_model.xsl"
+      },
+      {
+        "label": "EA Principles",
+        "xsl": "enterprise/core_el_ea_principles_cat.xsl"
+      },
+      {
+        "label": "Organisation Structure Model",
+        "xsl": "business/core_bl_bus_org_structure_model.xsl"
+      },
+      {
+        "label": "Programme Catalogue",
+        "xsl": "enterprise/core_el_programme_catalogue_by_name.xsl"
+      },
+      {
+        "label": "Programme Plan",
+        "xsl": "enterprise/core_el_programme_plan.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Information Architect View Filter",
+    "active_count": 17,
+    "total_count": 21,
+    "sample": [
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Info/Data Summary",
+        "xsl": "application/core_al_app_info_data_summary.xsl"
+      },
+      {
+        "label": "Application Information Dependency Model",
+        "xsl": "application/core_al_app_provider_info_deps_model.xsl"
+      },
+      {
+        "label": "Application Interface Catalogue",
+        "xsl": "application/core_al_app_interface_list_table.xsl"
+      },
+      {
+        "label": "Application Reference Model",
+        "xsl": "enterprise/core_al_app_ref_dashboard.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Information Architecture Views",
+    "active_count": 21,
+    "total_count": 25,
+    "sample": [
+      {
+        "label": "Data Catalogue",
+        "xsl": "information/core_il_data_list_by_name.xsl"
+      },
+      {
+        "label": "Data Object Model",
+        "xsl": "information/core_il_data_object_model.xsl"
+      },
+      {
+        "label": "Data Object Provider Model",
+        "xsl": "information/core_il_data_object_provider_model.xsl"
+      },
+      {
+        "label": "Data Object Summary -",
+        "xsl": "information/core_il_data_object_summary_new.xsl"
+      },
+      {
+        "label": "Data Representation Catalogue",
+        "xsl": "information/core_il_data_rep_catalogue_as_table.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Project Delivery",
+    "active_count": 15,
+    "total_count": 25,
+    "sample": [
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Interface Catalogue",
+        "xsl": "application/core_al_app_interface_list_table.xsl"
+      },
+      {
+        "label": "Application Service Catalogue",
+        "xsl": "application/core_al_app_service_list_by_name.xsl"
+      },
+      {
+        "label": "Application Technology Strategy Alignment",
+        "xsl": "technology/core_tl_app_tech_alignment.xsl"
+      },
+      {
+        "label": "Business Service Catalogue",
+        "xsl": "business/core_bl_bus_service_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Project Delivery View Filter",
+    "active_count": 37,
+    "total_count": 53,
+    "sample": [
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Catalogue",
+        "xsl": "application/core_al_app_provider_list_table.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Function Implementation Summary",
+        "xsl": "application/core_al_app_func_impl_summary.xsl"
+      },
+      {
+        "label": "Application Impact Analysis",
+        "xsl": "application/core_al_app_impact_analysis.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Strategy Management View Filter",
+    "active_count": 26,
+    "total_count": 31,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue",
+        "xsl": "application/core_al_app_cap_list_by_name_filtered.xsl"
+      },
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Diversity Analysis",
+        "xsl": "application/core_al_app_diversity_analysis.xsl"
+      },
+      {
+        "label": "Application Function Implementation Catalogue",
+        "xsl": "application/core_al_app_func_impl_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Support Views",
+    "active_count": 14,
+    "total_count": 16,
+    "sample": [
+      {
+        "label": "All Instances by Class",
+        "xsl": "integration/core_int_all_instances_by_class.xsl"
+      },
+      {
+        "label": "Class Overview",
+        "xsl": "integration/class_overview.xsl"
+      },
+      {
+        "label": "Drag and Drop Data Capture",
+        "xsl": "ext/ext_essential_drag_dashboard.xsl"
+      },
+      {
+        "label": "Duplicate Dashboard - Key Classes",
+        "xsl": "integration/core_ut_duplicate_dashboard_filter.xsl"
+      },
+      {
+        "label": "EA Assistant",
+        "xsl": "ext/core_el_ea_assistant.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Technology Architect View Filter",
+    "active_count": 10,
+    "total_count": 21,
+    "sample": [
+      {
+        "label": "Application Capability Summary",
+        "xsl": "application/core_al_app_cap_summary.xsl"
+      },
+      {
+        "label": "Application Deployment Summary",
+        "xsl": "application/core_al_app_deployment_summary.xsl"
+      },
+      {
+        "label": "Application Function Implementation Summary",
+        "xsl": "application/core_al_app_func_impl_summary.xsl"
+      },
+      {
+        "label": "Application Service Summary",
+        "xsl": "application/core_al_app_service_summary.xsl"
+      },
+      {
+        "label": "Application Summary -",
+        "xsl": "application/core_al_application_provider_summary.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Technology Architecture Views",
+    "active_count": 12,
+    "total_count": 26,
+    "sample": [
+      {
+        "label": "Application Technology Strategy Alignment",
+        "xsl": "technology/core_tl_app_tech_alignment.xsl"
+      },
+      {
+        "label": "Strategic Technology Product Selector",
+        "xsl": "technology/core_tl_tech_product_selector.xsl"
+      },
+      {
+        "label": "Supplier Impact Map",
+        "xsl": "enterprise/core_el_supplier_impact_map.xsl"
+      },
+      {
+        "label": "Supplier License Management",
+        "xsl": "enterprise/core_el_supplier_license_mgmt.xsl"
+      },
+      {
+        "label": "Technology Component Catalogue",
+        "xsl": "technology/core_tl_tech_comp_list_by_name.xsl"
+      }
+    ]
+  },
+  {
+    "classification": "Unclassified",
+    "active_count": 3,
+    "total_count": 5,
+    "sample": [
+      {
+        "label": "Application Capability Catalogue as Table",
+        "xsl": "application/core_al_app_cap_list_as_table_filtered.xsl"
+      },
+      {
+        "label": "IT Asset Dashboard View Checker",
+        "xsl": "enterprise/view-checkers/util_vc_el_it_asset_dashboard.xsl"
+      },
+      {
+        "label": "View Library",
+        "xsl": "view_library.xsl"
+      }
+    ]
+  }
+]
