@@ -175,6 +175,31 @@
                         margin-right: 5px;
                         margin-bottom: 5px;
                     }
+                    .product-meta {
+                        margin: 10px 0;
+                        padding: 10px;
+                        background-color: #f8f8f8;
+                        border-radius: 4px;
+                    }
+                    .meta-item {
+                        display: inline-block;
+                        margin-right: 15px;
+                        margin-bottom: 5px;
+                    }
+                    .meta-label {
+                        font-weight: bold;
+                        color: #666;
+                        font-size: 0.85em;
+                        margin-right: 5px;
+                    }
+                    .status-tag {
+                        display: inline-block;
+                        padding: 4px 10px;
+                        border-radius: 12px;
+                        font-size: 0.85em;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
                 </style>
             </head>
             <body>
@@ -264,6 +289,27 @@
                             {{description}}
                         </div>
                         {{/if}}
+
+                        <div class="product-meta">
+                            {{#if productFamily}}
+                            <div class="meta-item">
+                                <span class="meta-label"><xsl:value-of select="eas:i18n('Product Family')"/>:</span>
+                                <span>{{productFamily}}</span>
+                            </div>
+                            {{/if}}
+                            {{#if lifecycleStatus}}
+                            <div class="meta-item">
+                                <span class="meta-label"><xsl:value-of select="eas:i18n('Lifecycle Status')"/>:</span>
+                                <span class="status-tag" style="background-color: {{{{lifecycleColor}}}}; color: {{{{lifecycleTextColor}}}};">{{lifecycleStatus}}</span>
+                            </div>
+                            {{/if}}
+                            {{#if deliveryModel}}
+                            <div class="meta-item">
+                                <span class="meta-label"><xsl:value-of select="eas:i18n('Delivery Model')"/>:</span>
+                                <span>{{deliveryModel}}</span>
+                            </div>
+                            {{/if}}
+                        </div>
 
                         {{#if components}}
                         <div style="margin: 10px 0;">
@@ -528,6 +574,69 @@
 
                 var techProducts = responses[0].technology_products || [];
                 var appsToTech = responses[1];
+                var filters = responses[0].filters || [];
+
+                // Helper function to generate color spectrum from red to green
+                function getColorForSequence(sequence, minSeq, maxSeq) {
+                    // Normalize sequence to 0-1 range
+                    var normalized = (sequence - minSeq) / (maxSeq - minSeq);
+
+                    // Create gradient from red (0) to yellow (0.5) to green (1)
+                    var r, g, b;
+                    if (normalized &lt; 0.5) {
+                        // Red to Yellow
+                        r = 255;
+                        g = Math.round(255 * (normalized * 2));
+                        b = 0;
+                    } else {
+                        // Yellow to Green
+                        r = Math.round(255 * (1 - (normalized - 0.5) * 2));
+                        g = 255;
+                        b = 0;
+                    }
+
+                    var bgColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+                    var textColor = (normalized &lt; 0.6) ? '#000' : '#fff'; // Dark text for lighter backgrounds
+
+                    return {bg: bgColor, text: textColor};
+                }
+
+                // Create color lookup maps from filters
+                var lifecycleColors = {};
+                var deliveryModels = {};
+                var lifecycleSequences = [];
+
+                filters.forEach(function(filter) {
+                    if (filter.slotName === 'vendor_product_lifecycle_status') {
+                        filter.values.forEach(function(val) {
+                            var seq = parseInt(val.sequence) || 0;
+                            lifecycleSequences.push(seq);
+                            lifecycleColors[val.id] = {
+                                sequence: seq
+                            };
+                        });
+                    } else if (filter.slotName === 'technology_provider_delivery_model') {
+                        filter.values.forEach(function(val) {
+                            deliveryModels[val.id] = {
+                                name: val.name || val.id,
+                                bg: val.backgroundColor || '#999',
+                                text: val.colour || '#fff'
+                            };
+                        });
+                    }
+                });
+
+                // Calculate min and max sequences for color gradient
+                var minSeq = Math.min.apply(Math, lifecycleSequences);
+                var maxSeq = Math.max.apply(Math, lifecycleSequences);
+
+                // Generate colors for each lifecycle status
+                Object.keys(lifecycleColors).forEach(function(statusId) {
+                    var seq = lifecycleColors[statusId].sequence;
+                    var colors = getColorForSequence(seq, minSeq, maxSeq);
+                    lifecycleColors[statusId].bg = colors.bg;
+                    lifecycleColors[statusId].text = colors.text;
+                });
 
                 // Create lookup map for applications by tech product
                 var appsByProduct = {};
@@ -563,7 +672,7 @@
                 // Build unique supplier list
                 var suppliers = new Set();
 
-                // Enrich products with application data
+                // Enrich products with application data and status info
                 allProducts = techProducts.map(function(product) {
                     var apps = appsByProduct[product.id] || [];
                     product.applications = apps;
@@ -579,6 +688,32 @@
                             name: product.supplier,
                             className: 'Supplier'
                         };
+                    }
+
+                    // Add product family (first one if multiple)
+                    if (product.member_of_technology_product_families &amp;&amp; product.member_of_technology_product_families.length > 0) {
+                        product.productFamily = product.member_of_technology_product_families[0].name;
+                    }
+
+                    // Add lifecycle status with colors
+                    if (product.lifecycleStatus) {
+                        var statusId = product.status;
+                        var statusColors = lifecycleColors[statusId] || {bg: '#999', text: '#fff'};
+                        product.lifecycleColor = statusColors.bg;
+                        product.lifecycleTextColor = statusColors.text;
+                    }
+
+                    // Add delivery model with proper name
+                    if (product.delivery) {
+                        var deliveryId = product.delivery;
+                        var deliveryInfo = deliveryModels[deliveryId];
+                        if (deliveryInfo) {
+                            product.deliveryModel = deliveryInfo.name;
+                            product.deliveryColor = deliveryInfo.bg;
+                            product.deliveryTextColor = deliveryInfo.text;
+                        } else {
+                            product.deliveryModel = deliveryId.replace(/_/g, ' ');
+                        }
                     }
 
                     return product;
