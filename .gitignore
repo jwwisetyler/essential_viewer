@@ -1,0 +1,26 @@
+# Test output files
+user/test_output.html
+user/mock_reportXML.xml
+
+# Node modules (if any)
+node_modules/
+
+# IDE files
+.vscode/*.log
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+
+# Build artifacts
+*.war
+*.class
+WEB-INF/classes/*.class
