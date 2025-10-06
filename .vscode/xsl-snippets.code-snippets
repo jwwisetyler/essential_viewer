@@ -1,0 +1,246 @@
+{
+    "Essential View Template": {
+        "prefix": "ess-view",
+        "body": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "<xsl:stylesheet version=\"2.0\" xpath-default-namespace=\"http://protege.stanford.edu/xml\"",
+            "    xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"",
+            "    xmlns:eas=\"http://www.enterprise-architecture.org/essential\"",
+            "    xmlns:functx=\"http://www.functx.com\"",
+            "    xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">",
+            "",
+            "    <xsl:include href=\"../common/core_doctype.xsl\"/>",
+            "    <xsl:include href=\"../common/core_common_head_content.xsl\"/>",
+            "    <xsl:include href=\"../common/core_header.xsl\"/>",
+            "    <xsl:include href=\"../common/core_footer.xsl\"/>",
+            "",
+            "    <xsl:output method=\"html\" omit-xml-declaration=\"yes\" indent=\"yes\"/>",
+            "",
+            "    <xsl:param name=\"param1\"/>",
+            "    <xsl:param name=\"viewScopeTermIds\"/>",
+            "",
+            "    <xsl:variable name=\"viewScopeTerms\" select=\"eas:get_scoping_terms_from_string(\\$viewScopeTermIds)\"/>",
+            "    <xsl:variable name=\"linkClasses\" select=\"('${1:Class_Name}')\"/>",
+            "",
+            "    <xsl:template match=\"knowledge_base\">",
+            "        <xsl:call-template name=\"docType\"/>",
+            "        <html>",
+            "            <head>",
+            "                <xsl:call-template name=\"commonHeadContent\"/>",
+            "                <xsl:call-template name=\"RenderModalReportContent\">",
+            "                    <xsl:with-param name=\"essModalClassNames\" select=\"\\$linkClasses\"/>",
+            "                </xsl:call-template>",
+            "                <title><xsl:value-of select=\"eas:i18n('${2:View Title}')\"/></title>",
+            "            </head>",
+            "            <body>",
+            "                <xsl:call-template name=\"Heading\"/>",
+            "                <div class=\"container-fluid\">",
+            "                    <div class=\"row\">",
+            "                        <div class=\"col-xs-12\">",
+            "                            <div class=\"page-header\">",
+            "                                <h1>",
+            "                                    <span class=\"text-primary\"><xsl:value-of select=\"eas:i18n('View')\"/>: </span>",
+            "                                    <span class=\"text-darkgrey\"><xsl:value-of select=\"eas:i18n('${2:View Title}')\"/></span>",
+            "                                </h1>",
+            "                            </div>",
+            "                        </div>",
+            "                        ${0:<!-- Your content here -->}",
+            "                    </div>",
+            "                </div>",
+            "                <xsl:call-template name=\"Footer\"/>",
+            "            </body>",
+            "        </html>",
+            "    </xsl:template>",
+            "",
+            "</xsl:stylesheet>"
+        ],
+        "description": "Complete Essential Viewer view template"
+    },
+    "Data Set API Variable": {
+        "prefix": "ess-api",
+        "body": [
+            "<xsl:variable name=\"${1:apiName}API\"",
+            "    select=\"\\$utilitiesAllDataSetAPIs[own_slot_value[slot_reference = 'name']/value = '${2:Core API: My Data}']\"/>"
+        ],
+        "description": "Data Set API variable definition"
+    },
+    "Get API Path": {
+        "prefix": "ess-api-path",
+        "body": [
+            "<xsl:variable name=\"api${1:Name}\">",
+            "    <xsl:call-template name=\"GetViewerAPIPath\">",
+            "        <xsl:with-param name=\"apiReport\" select=\"\\$${1:Name}API\"/>",
+            "    </xsl:call-template>",
+            "</xsl:variable>"
+        ],
+        "description": "Get API path for JavaScript use"
+    },
+    "Register Link Classes": {
+        "prefix": "ess-links",
+        "body": [
+            "<xsl:for-each select=\"\\$linkClasses\">",
+            "    <xsl:call-template name=\"RenderInstanceLinkJavascript\">",
+            "        <xsl:with-param name=\"instanceClassName\" select=\"current()\"/>",
+            "        <xsl:with-param name=\"targetMenu\" select=\"()\"/>",
+            "    </xsl:call-template>",
+            "</xsl:for-each>"
+        ],
+        "description": "Register clickable link classes"
+    },
+    "Handlebars Template": {
+        "prefix": "ess-handlebars",
+        "body": [
+            "<script id=\"${1:template-name}\" type=\"text/x-handlebars-template\">",
+            "    ${0:<!-- Template content -->}",
+            "</script>"
+        ],
+        "description": "Handlebars template block"
+    },
+    "Handlebars Instance Link": {
+        "prefix": "ess-hb-link",
+        "body": [
+            "{{#essRenderInstanceLink ${1:this} '${2:Class_Name}'}}{{/essRenderInstanceLink}}"
+        ],
+        "description": "Handlebars instance link helper"
+    },
+    "i18n Label": {
+        "prefix": "ess-i18n",
+        "body": [
+            "<xsl:value-of select=\"eas:i18n('${1:Label Text}')\"/>"
+        ],
+        "description": "Internationalized label"
+    },
+    "Promise Load API": {
+        "prefix": "ess-promise",
+        "body": [
+            "var promise_loadViewerAPIData = function (apiDataSetURL) {",
+            "    return new Promise(function (resolve, reject) {",
+            "        if (apiDataSetURL != null) {",
+            "            var xmlhttp = new XMLHttpRequest();",
+            "            xmlhttp.onreadystatechange = function () {",
+            "                if (this.readyState == 4 && this.status == 200) {",
+            "                    var viewerData = JSON.parse(this.responseText);",
+            "                    resolve(viewerData);",
+            "                }",
+            "            };",
+            "            xmlhttp.onerror = function () {",
+            "                reject(false);",
+            "            };",
+            "            xmlhttp.open(\"GET\", apiDataSetURL, true);",
+            "            xmlhttp.send();",
+            "        } else {",
+            "            reject(false);",
+            "        }",
+            "    });",
+            "};"
+        ],
+        "description": "Promise-based API loader function"
+    },
+    "DataTable Basic": {
+        "prefix": "ess-datatable",
+        "body": [
+            "var table = $('#${1:tableId}').DataTable({",
+            "    paging: ${2:true},",
+            "    pageLength: ${3:25},",
+            "    searching: ${4:true},",
+            "    ordering: ${5:true},",
+            "    columns: [",
+            "        { data: '${6:column1}', title: '${7:Column 1}' }",
+            "    ]",
+            "});"
+        ],
+        "description": "Basic DataTable configuration"
+    },
+    "Bootstrap Card": {
+        "prefix": "ess-card",
+        "body": [
+            "<div class=\"${1:card-class}\">",
+            "    <div class=\"${2:card-header}\">",
+            "        <h3>${3:Card Title}</h3>",
+            "    </div>",
+            "    <div class=\"${4:card-body}\">",
+            "        ${0:<!-- Card content -->}",
+            "    </div>",
+            "</div>"
+        ],
+        "description": "Bootstrap card structure"
+    },
+    "XSL Variable": {
+        "prefix": "xsl-var",
+        "body": [
+            "<xsl:variable name=\"${1:varName}\" select=\"${2:expression}\"/>"
+        ],
+        "description": "XSL variable definition"
+    },
+    "XSL For-Each": {
+        "prefix": "xsl-foreach",
+        "body": [
+            "<xsl:for-each select=\"${1:expression}\">",
+            "    ${0}",
+            "</xsl:for-each>"
+        ],
+        "description": "XSL for-each loop"
+    },
+    "XSL Choose When": {
+        "prefix": "xsl-choose",
+        "body": [
+            "<xsl:choose>",
+            "    <xsl:when test=\"${1:condition}\">",
+            "        ${2}",
+            "    </xsl:when>",
+            "    <xsl:otherwise>",
+            "        ${0}",
+            "    </xsl:otherwise>",
+            "</xsl:choose>"
+        ],
+        "description": "XSL conditional (choose/when/otherwise)"
+    },
+    "Report Registration": {
+        "prefix": "ess-register-view",
+        "body": [
+            "<simple_instance>",
+            "    <name>${1:unique_view_id}</name>",
+            "    <type>Report</type>",
+            "    <supertype>Essential_Viewer</supertype>",
+            "    <supertype>EA_Support</supertype>",
+            "    <supertype>EA_Class</supertype>",
+            "    <supertype>:THING</supertype>",
+            "    <supertype>EA_Graph_Management</supertype>",
+            "    <supertype>EA_System</supertype>",
+            "    <own_slot_value>",
+            "        <slot_reference>report_is_enabled</slot_reference>",
+            "        <value value_type=\"boolean\">true</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>report_implementation_type</slot_reference>",
+            "        <value value_type=\"simple_instance\">viewer3_devrep_14032012_003_Class10015</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>report_xsl_filename</slot_reference>",
+            "        <value value_type=\"string\">user/${2:view_filename}.xsl</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>report_label</slot_reference>",
+            "        <value value_type=\"string\">${3:View Display Name}</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>report_history_label</slot_reference>",
+            "        <value value_type=\"string\">${3:View Display Name}</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>description</slot_reference>",
+            "        <value value_type=\"string\">${4:View description}</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>element_classified_by</slot_reference>",
+            "        <value value_type=\"simple_instance\">${5:essential_baseline_v2.0_Class80007}</value>",
+            "    </own_slot_value>",
+            "    <own_slot_value>",
+            "        <slot_reference>system_is_published</slot_reference>",
+            "        <value value_type=\"boolean\">true</value>",
+            "    </own_slot_value>",
+            "</simple_instance>"
+        ],
+        "description": "Complete view registration in reportXML.xml"
+    }
+}

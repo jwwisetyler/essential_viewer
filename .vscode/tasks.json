@@ -1,0 +1,102 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Test Current XSL View",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/user/test_runner.js",
+                "${file}"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Test Tech Product Browser",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/user/test_runner.js",
+                "${workspaceFolder}/user/tech_product_app_browser.xsl"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Validate All User XSL Views",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "for file in ${workspaceFolder}/user/*.xsl; do echo \"Testing $file\"; node ${workspaceFolder}/user/test_runner.js \"$file\"; done"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "-Command",
+                    "Get-ChildItem ${workspaceFolder}\\user\\*.xsl | ForEach-Object { Write-Host \"Testing $($_.Name)\"; node ${workspaceFolder}\\user\\test_runner.js $_.FullName }"
+                ]
+            }
+        },
+        {
+            "label": "Open Test Output in Browser",
+            "type": "shell",
+            "command": "start",
+            "args": [
+                "${workspaceFolder}/user/test_output.html"
+            ],
+            "group": "test",
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": [],
+            "linux": {
+                "command": "xdg-open"
+            },
+            "osx": {
+                "command": "open"
+            }
+        },
+        {
+            "label": "Create New Custom View",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "-e",
+                "const fs=require('fs'); const name=process.argv[1]; const template=`<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\n<xsl:stylesheet version=\\\"2.0\\\" xpath-default-namespace=\\\"http://protege.stanford.edu/xml\\\"\\n    xmlns:xsl=\\\"http://www.w3.org/1999/XSL/Transform\\\"\\n    xmlns:eas=\\\"http://www.enterprise-architecture.org/essential\\\"\\n    xmlns:functx=\\\"http://www.functx.com\\\"\\n    xmlns:xs=\\\"http://www.w3.org/2001/XMLSchema\\\">\\n\\n    <xsl:include href=\\\"../common/core_doctype.xsl\\\"/>\\n    <xsl:include href=\\\"../common/core_common_head_content.xsl\\\"/>\\n    <xsl:include href=\\\"../common/core_header.xsl\\\"/>\\n    <xsl:include href=\\\"../common/core_footer.xsl\\\"/>\\n\\n    <xsl:output method=\\\"html\\\" omit-xml-declaration=\\\"yes\\\" indent=\\\"yes\\\"/>\\n\\n    <xsl:param name=\\\"param1\\\"/>\\n    <xsl:param name=\\\"viewScopeTermIds\\\"/>\\n\\n    <xsl:variable name=\\\"viewScopeTerms\\\" select=\\\"eas:get_scoping_terms_from_string($viewScopeTermIds)\\\"/>\\n    <xsl:variable name=\\\"linkClasses\\\" select=\\\"()\\\"/>\\n\\n    <xsl:template match=\\\"knowledge_base\\\">\\n        <xsl:call-template name=\\\"docType\\\"/>\\n        <html>\\n            <head>\\n                <xsl:call-template name=\\\"commonHeadContent\\\"/>\\n                <title>\\n                    <xsl:value-of select=\\\"eas:i18n('${name}')\\\"/>\\n                </title>\\n            </head>\\n            <body>\\n                <xsl:call-template name=\\\"Heading\\\"/>\\n                <div class=\\\"container-fluid\\\">\\n                    <div class=\\\"row\\\">\\n                        <div class=\\\"col-xs-12\\\">\\n                            <div class=\\\"page-header\\\">\\n                                <h1>\\n                                    <span class=\\\"text-primary\\\">\\n                                        <xsl:value-of select=\\\"eas:i18n('View')\\\"/>: \\n                                    </span>\\n                                    <span class=\\\"text-darkgrey\\\">\\n                                        <xsl:value-of select=\\\"eas:i18n('${name}')\\\"/>\\n                                    </span>\\n                                </h1>\\n                            </div>\\n                        </div>\\n                        <!-- Add your content here -->\\n                    </div>\\n                </div>\\n                <xsl:call-template name=\\\"Footer\\\"/>\\n            </body>\\n        </html>\\n    </xsl:template>\\n\\n</xsl:stylesheet>`; fs.writeFileSync(`user/${name}.xsl`, template); console.log(`Created user/${name}.xsl`);",
+                "${input:viewName}"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "viewName",
+            "type": "promptString",
+            "description": "Enter the view name (e.g., my_custom_view)",
+            "default": "my_custom_view"
+        }
+    ]
+}

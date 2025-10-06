@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test XSL View (Mock Data)",
+            "program": "${workspaceFolder}/user/test_runner.js",
+            "args": [
+                "${file}"
+            ],
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Test Tech Product Browser",
+            "program": "${workspaceFolder}/user/test_runner.js",
+            "args": [
+                "${workspaceFolder}/user/tech_product_app_browser.xsl"
+            ],
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Preview XSL Output in Browser",
+            "url": "file:///${workspaceFolder}/user/test_output.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

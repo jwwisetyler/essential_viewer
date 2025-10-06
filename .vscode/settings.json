@@ -1,0 +1,39 @@
+{
+    "files.associations": {
+        "*.xsl": "xml",
+        "*.xslt": "xml"
+    },
+    "xml.fileAssociations": [
+        {
+            "pattern": "**/*.xsl",
+            "systemId": "http://www.w3.org/1999/XSL/Transform"
+        },
+        {
+            "pattern": "**/reportXML.xml",
+            "systemId": "http://protege.stanford.edu/xml"
+        }
+    ],
+    "xml.validation.enabled": true,
+    "xml.validation.namespaces.enabled": "always",
+    "files.exclude": {
+        "**/user/test_output.html": true,
+        "**/user/mock_reportXML.xml": true
+    },
+    "search.exclude": {
+        "**/user/test_output.html": true,
+        "**/user/mock_reportXML.xml": true
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml",
+        "editor.formatOnSave": false,
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "xml.format.splitAttributes": false,
+    "xml.format.enabled": true,
+    "xml.codeLens.enabled": true,
+    "xml.symbols.enabled": true,
+    "emmet.includeLanguages": {
+        "xml": "html"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "redhat.vscode-xml",
+        "dotjoshjohnson.xml",
+        "formulahendry.auto-rename-tag",
+        "vincaslt.highlight-matching-tag",
+        "ms-vscode.live-server"
+    ],
+    "unwantedRecommendations": []
+}
