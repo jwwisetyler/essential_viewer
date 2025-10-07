@@ -1,0 +1,165 @@
+/* ============================================
+   Technology Product Radar Styles
+   ============================================ */
+
+/* Container and Layout */
+.tech-radar-container {
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+}
+
+svg#tech-radar {
+    max-width: 100%;
+    height: auto;
+}
+
+.tech-radar-filter-section {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tech-radar-loading-spinner {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.tech-radar-loading-spinner i {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Tabs Styling */
+.tech-radar-tabs.nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.tech-radar-tabs.nav-tabs > li > a {
+    border-radius: 4px 4px 0 0;
+    font-weight: 600;
+}
+
+.tech-radar-tabs.nav-tabs > li.active > a {
+    color: #fff;
+    background-color: #5bc0de;
+    border: 1px solid #5bc0de;
+}
+
+.tech-radar-tab-content > .tab-pane {
+    padding: 20px 0;
+}
+
+/* Tooltip Styling */
+#tech-radar-tooltip {
+    position: absolute;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    max-width: 300px;
+    z-index: 1000;
+    font-size: 12px;
+}
+
+#tech-radar-tooltip.visible {
+    opacity: 1;
+}
+
+.tech-radar-tooltip-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    padding-bottom: 5px;
+}
+
+.tech-radar-tooltip-detail {
+    margin: 3px 0;
+}
+
+.tech-radar-tooltip-label {
+    font-weight: 600;
+    color: #3fceb9;
+}
+
+/* Stats Section */
+.tech-radar-stats-section {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.tech-radar-stats-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #5bc0de;
+    color: white;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+/* SVG Elements - Radar Blips */
+.tech-radar-blip {
+    cursor: pointer;
+}
+
+.tech-radar-blip:hover {
+    opacity: 0.7;
+}
+
+/* SVG Elements - Ring Labels */
+.tech-radar-ring-label {
+    font-size: 11px;
+    font-weight: bold;
+    fill: #333;
+    text-anchor: start;
+    pointer-events: none;
+}
+
+/* SVG Elements - Sector Labels */
+.tech-radar-sector-label {
+    font-size: 13px;
+    font-weight: bold;
+    fill: #2c3e50;
+    text-anchor: middle;
+    pointer-events: none;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8), -1px -1px 2px rgba(255,255,255,0.8);
+}
+
+/* SVG Elements - Point Text */
+.tech-radar-point-text {
+    font-size: 12px;
+    font-weight: bold;
+    fill: #000;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+/* SVG Elements - Sector Paths */
+.tech-radar-sector-path {
+    stroke-width: 1.5;
+    cursor: pointer;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.tech-radar-sector-path:hover {
+    filter: drop-shadow(0 0 10px currentColor) brightness(1.2);
+    opacity: 0.9;
+}
+
+.tech-radar-sector-path.glow {
+    filter: drop-shadow(0 0 15px currentColor) brightness(1.3);
+    opacity: 1;
+}
