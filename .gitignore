@@ -24,3 +24,4 @@ Desktop.ini
 *.war
 *.class
 WEB-INF/classes/*.class
+.claude/settings.local.json
