@@ -406,7 +406,7 @@
                 let linkId = instance.id + 'Link';
 
                 // Open applications in new tab to preserve the current view
-                let targetAttr = (type === 'Application_Provider' || type === 'Composite_Application_Provider') ? ' target="_blank"' : '';
+                let targetAttr = (type === 'Application_Provider' || type === 'Composite_Application_Provider' || type === 'Technology_Product') ? ' target="_blank"' : '';
 
                 let instanceLink = '&lt;a href="' + linkHref + '" class="' + linkClass + '" id="' + linkId + '"' + targetAttr + '&gt;' + instance.name + '&lt;/a&gt;';
                 return new Handlebars.SafeString(instanceLink);

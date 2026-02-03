@@ -27,6 +27,11 @@ var lifecycleStatuses = [];
 var currentGroupIndex = 0;
 var lifecycleColors = {};
 
+// Panel state management
+var isPanelCollapsed = false;
+var currentFilteredProducts = [];
+var productIdToDisplayNumber = {};
+
 // Promise-based API loader
 function loadViewerAPIData(apiDataSetURL) {
     return new Promise(function (resolve, reject) {
@@ -407,6 +412,149 @@ class TechRadar {
     }
 }
 
+// Render product list grouped by ring (lifecycle status)
+function renderProductList() {
+    var searchTerm = $('#searchInput').val().toLowerCase();
+    var currentGroup = familyGroups[currentGroupIndex];
+    var familyIds = currentGroup.families.map(function(f) { return f.id; });
+
+    // Filter products for current view
+    var visibleProducts = allProducts.filter(function(product) {
+        var inGroup = product.families.some(function(f) { return familyIds.indexOf(f.id) !== -1; });
+        if (!inGroup) return false;
+        if (searchTerm && !product.name.toLowerCase().includes(searchTerm)) return false;
+        return true;
+    });
+
+    currentFilteredProducts = visibleProducts;
+
+    // Group by ring
+    var productsByRing = {};
+    lifecycleStatuses.slice(0, 4).forEach(function(status, ringIndex) {
+        productsByRing[ringIndex] = [];
+    });
+
+    visibleProducts.forEach(function(product) {
+        if (!productsByRing[product.ring]) productsByRing[product.ring] = [];
+        productsByRing[product.ring].push(product);
+    });
+
+    // Sort alphabetically within rings
+    Object.keys(productsByRing).forEach(function(ringIndex) {
+        productsByRing[ringIndex].sort(function(a, b) {
+            return a.name.localeCompare(b.name);
+        });
+    });
+
+    // Build HTML for product list
+    var listHtml = '';
+    var hiddenLinksHtml = '';
+
+    lifecycleStatuses.slice(0, 4).forEach(function(status, ringIndex) {
+        var ringProducts = productsByRing[ringIndex] || [];
+        if (ringProducts.length === 0) return;
+
+        var ringName = status.name || 'Ring ' + ringIndex;
+
+        listHtml += '<div class="tech-radar-ring-section">';
+        listHtml += '<div class="tech-radar-ring-heading" data-ring-index="' + ringIndex + '">';
+        listHtml += '<i class="fa fa-chevron-down"></i> ';
+        listHtml += ringName;
+        listHtml += ' <span class="tech-radar-ring-count">(' + ringProducts.length + ')</span>';
+        listHtml += '</div>';
+        listHtml += '<ul class="tech-radar-product-list" data-ring-index="' + ringIndex + '">';
+
+        ringProducts.forEach(function(product) {
+            var linkHref = '?XML=reportXML.xml&PMA=' + product.productId + '&cl=' + essLinkLanguage;
+
+            // Get the display number from the mapping (same as radar)
+            var displayNumber = productIdToDisplayNumber[product.productId] || '?';
+
+            // List item link (visible)
+            listHtml += '<li>';
+            listHtml += '<a href="' + linkHref + '" ';
+            listHtml += 'class="context-menu-techProdGenMenu tech-radar-product-item" ';
+            listHtml += 'data-product-id="' + product.productId + '" ';
+            listHtml += 'target="_blank">';
+            listHtml += '<span class="tech-radar-product-item-number">' + displayNumber + '</span>';
+            listHtml += '<span class="tech-radar-product-item-name">' + product.name + '</span>';
+            listHtml += '</a>';
+            listHtml += '</li>';
+
+            // Hidden link for radar blips
+            hiddenLinksHtml += '<a href="' + linkHref + '" ';
+            hiddenLinksHtml += 'id="hiddenLink_' + product.productId + '" ';
+            hiddenLinksHtml += 'class="context-menu-techProdGenMenu" ';
+            hiddenLinksHtml += 'target="_blank">';
+            hiddenLinksHtml += product.name;
+            hiddenLinksHtml += '</a>';
+        });
+
+        listHtml += '</ul>';
+        listHtml += '</div>';
+    });
+
+    // Update DOM
+    $('#productListContent').html(listHtml);
+    $('#hiddenProductLinks').html(hiddenLinksHtml);
+
+    // Attach collapse handlers
+    $('.tech-radar-ring-heading').off('click').on('click', function() {
+        var ringIndex = $(this).data('ring-index');
+        var list = $('.tech-radar-product-list[data-ring-index="' + ringIndex + '"]');
+        var icon = $(this).find('i');
+
+        list.slideToggle(200);
+        icon.toggleClass('fa-chevron-down fa-chevron-right');
+    });
+}
+
+// Toggle panel collapse
+function setupPanelToggle() {
+    $('#togglePanelBtn').off('click').on('click', function(e) {
+        e.preventDefault();
+
+        isPanelCollapsed = !isPanelCollapsed;
+
+        if (isPanelCollapsed) {
+            $('#productListPanel').addClass('collapsed');
+            $('#radarColumn').removeClass('col-md-9').addClass('col-md-12');
+            $('.tech-radar-toggle-icon').addClass('rotated');
+        } else {
+            $('#productListPanel').removeClass('collapsed');
+            $('#radarColumn').removeClass('col-md-12').addClass('col-md-9');
+            $('.tech-radar-toggle-icon').removeClass('rotated');
+        }
+    });
+}
+
+// Handle clicks on radar blips - delegate to hidden HTML links
+function setupBlipClickHandlers() {
+    // Handle both left and right-click on radar blips
+    $(document).off('click.radarBlip contextmenu.radarBlip', '.tech-radar-blip');
+
+    $(document).on('click.radarBlip contextmenu.radarBlip', '.tech-radar-blip', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        // Get product ID from blip
+        var productId = $(this).attr('data-product-id');
+
+        // Find corresponding hidden link
+        var hiddenLink = $('#hiddenLink_' + productId);
+
+        if (hiddenLink.length > 0) {
+            // Trigger right-click on the hidden link to show context menu
+            var evt = $.Event('contextmenu');
+            evt.pageX = e.pageX;
+            evt.pageY = e.pageY;
+            hiddenLink.trigger(evt);
+        }
+
+        return false;
+    });
+}
+
 // Group families into tabs with alphabetical ranges
 function createFamilyGroups(families) {
     var groups = [];
@@ -554,16 +702,24 @@ function renderCurrentGroupRadar() {
         radarContainer = $('#' + radarContainerId);
     }
 
-    // Create radar items
+    // Create radar items and build productId to display number mapping
     var radarItems = [];
     var itemId = 1;
+    productIdToDisplayNumber = {}; // Reset mapping
 
     filteredProducts.forEach(function(product) {
         product.families.forEach(function(family) {
             if (familyIds.indexOf(family.id) === -1) return;
 
+            var displayId = itemId++;
+
+            // Store the first display number for this product
+            if (!productIdToDisplayNumber[product.productId]) {
+                productIdToDisplayNumber[product.productId] = displayId;
+            }
+
             radarItems.push({
-                id: itemId++,
+                id: displayId,
                 label: product.name,
                 familyId: family.id,
                 familyName: family.name,
@@ -585,6 +741,14 @@ function renderCurrentGroupRadar() {
 
     radar.setData(radarItems, visibleFamilies, lifecycleStatuses.slice(0, 4));
     radar.render();
+
+    // Setup blip click handlers after SVG is rendered
+    setTimeout(function() {
+        setupBlipClickHandlers();
+    }, 100);
+
+    // Update product list
+    renderProductList();
 }
 
 // Initialize
@@ -663,6 +827,7 @@ $(document).ready(function() {
 
             allProducts.push({
                 id: product.id,
+                productId: product.id,  // Explicit productId for clarity
                 name: product.name,
                 families: families,
                 ring: ring,
@@ -689,6 +854,9 @@ $(document).ready(function() {
         // Hide loading, show radar container
         $('#loadingSpinner').hide();
         $('#radarContainer').show();
+
+        // Setup panel toggle
+        setupPanelToggle();
 
         console.log('Radar rendered with ' + allProducts.length + ' products across ' +
                   familyGroups.length + ' tabs');
