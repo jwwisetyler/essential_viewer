@@ -422,7 +422,14 @@ function renderProductList() {
     var visibleProducts = allProducts.filter(function(product) {
         var inGroup = product.families.some(function(f) { return familyIds.indexOf(f.id) !== -1; });
         if (!inGroup) return false;
-        if (searchTerm && !product.name.toLowerCase().includes(searchTerm)) return false;
+
+        // Search in both name and description
+        if (searchTerm) {
+            var nameMatch = product.name.toLowerCase().includes(searchTerm);
+            var descMatch = product.description.toLowerCase().includes(searchTerm);
+            if (!nameMatch && !descMatch) return false;
+        }
+
         return true;
     });
 
@@ -678,9 +685,11 @@ function renderCurrentGroupRadar() {
         var inGroup = product.families.some(function(f) { return familyIds.indexOf(f.id) !== -1; });
         if (!inGroup) return false;
 
-        // Apply search
-        if (searchTerm && !product.name.toLowerCase().includes(searchTerm)) {
-            return false;
+        // Apply search in both name and description
+        if (searchTerm) {
+            var nameMatch = product.name.toLowerCase().includes(searchTerm);
+            var descMatch = product.description.toLowerCase().includes(searchTerm);
+            if (!nameMatch && !descMatch) return false;
         }
 
         return true;
@@ -829,6 +838,7 @@ $(document).ready(function() {
                 id: product.id,
                 productId: product.id,  // Explicit productId for clarity
                 name: product.name,
+                description: product.description || '',
                 families: families,
                 ring: ring,
                 lifecycleId: lifecycleId,
