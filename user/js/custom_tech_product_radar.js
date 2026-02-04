@@ -477,11 +477,16 @@ function renderProductList() {
             // Get the display number from the mapping (same as radar)
             var displayNumber = productIdToDisplayNumber[product.productId] || '?';
 
+            // Apply colors from radar: family/sector color as background, lifecycle color as left border
+            var lifecycleColor = product.color || '#efafa9';
+            var familyColor = product.familyColor || '#cccccc';
+
             // List item link (visible)
             listHtml += '<li>';
             listHtml += '<a href="' + linkHref + '" ';
             listHtml += 'class="context-menu-techProdGenMenu tech-radar-product-item" ';
             listHtml += 'data-product-id="' + product.productId + '" ';
+            listHtml += 'style="background-color: ' + familyColor + '; border-left: 4px solid ' + lifecycleColor + ';" ';
             listHtml += 'target="_blank">';
             listHtml += '<span class="tech-radar-product-item-number">' + displayNumber + '</span>';
             listHtml += '<span class="tech-radar-product-item-name">' + product.name + '</span>';
@@ -819,6 +824,12 @@ $(document).ready(function() {
         // Create family groups for tabs
         familyGroups = createFamilyGroups(allFamilies);
 
+        // Create family-to-color mapping using the colorblind-safe palette
+        var familyColors = {};
+        allFamilies.forEach(function(family, index) {
+            familyColors[family.id] = COLORBLIND_SAFE_COLORS[index % COLORBLIND_SAFE_COLORS.length];
+        });
+
         // Process products
         techProducts.forEach(function(product) {
             var families = product.member_of_technology_product_families || [];
@@ -834,6 +845,12 @@ $(document).ready(function() {
 
             var statusColors = lifecycleColors[lifecycleId] || {bg: '#efafa9'};
 
+            // Get the first family's color (products can have multiple families)
+            var primaryFamilyColor = '#cccccc'; // default gray
+            if (families.length > 0 && families[0].id) {
+                primaryFamilyColor = familyColors[families[0].id] || '#cccccc';
+            }
+
             allProducts.push({
                 id: product.id,
                 productId: product.id,  // Explicit productId for clarity
@@ -844,7 +861,8 @@ $(document).ready(function() {
                 lifecycleId: lifecycleId,
                 lifecycleName: lifecycleNames[lifecycleId] || 'Unknown',
                 supplier: product.supplier,
-                color: statusColors.bg
+                color: statusColors.bg,  // Lifecycle/ring color
+                familyColor: primaryFamilyColor  // Sector color
             });
         });
 
